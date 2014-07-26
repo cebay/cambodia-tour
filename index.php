@@ -263,6 +263,17 @@
                     </div>
                 </div>
                 <footer>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="footer-menu-lists">
+                                <li>contact us</li>
+                                <li>about us</li>
+                                <li>gallery</li>
+                                <li>destinations</li>
+                            </ul>
+                            <p class="copy-right">copyright &copy; 2014</p>
+                        </div>
+                    </div>
                 </footer>
             </div>
         </div>
