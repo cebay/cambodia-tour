@@ -31,6 +31,18 @@
                         <img src="images/logo_mot.png">
                     </div>
                     <div class="col-xs-9">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <form class="navbar-form navbar-right" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                    <button type="submit" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-search"></span> Submit
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
                         <ul class="nav nav-top pull-right">
                             <li class="active"><a href="#" class="hover-style">Home</a></li>
                             <li><a href="#" class="hover-style">about us</a></li>
