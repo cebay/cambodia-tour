@@ -102,6 +102,9 @@ textarea {
     height: 400px;
     width: 100%;
 }
+.main-content {
+    clear: both;
+}
 ul.nav-top li {
     display: inline-block;
 }

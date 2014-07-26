@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,31 +26,75 @@
         <div class="container-full-width">
             <div class="container">
                 <header>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <img src="images/logo_mot.png">
+                        </div>
+                        <div class="col-xs-9">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <form class="navbar-form navbar-right" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-search"></span> Submit
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <ul class="nav nav-top pull-right">
+                                <li class="active"><a href="#" class="hover-style">Home</a></li>
+                                <li><a href="#" class="hover-style">about us</a></li>
+                                <li><a href="#" class="hover-style">destination</a></li>
+                                <li><a href="#" class="hover-style">gallery</a></li>
+                                <li><a href="#" class="hover-style">contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </header>
                 <div class="main-content">
-                    <div class="col-xs-3">
-                        <img src="images/logo_mot.png">
-                    </div>
-                    <div class="col-xs-9">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <form class="navbar-form navbar-right" role="search">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Search">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
+
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="images/slides/6.jpg" alt="6.jpg">
+                                        <div class="carousel-caption">
+                                            image: 6.jpg
+                                        </div>
                                     </div>
-                                    <button type="submit" class="btn btn-default">
-                                        <span class="glyphicon glyphicon-search"></span> Submit
-                                    </button>
-                                </form>
+                                    <div class="item">
+                                        <img src="images/slides/7.jpg" alt="7.jpg">
+                                        <div class="carousel-caption">
+                                            image: 7.jpg
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/slides/8.jpg" alt="8.jpg">
+                                        <div class="carousel-caption">
+                                            image: 8.jpg
+                                        </div>
+                                    </div>
+                              </div>
+
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                              </a>
+                              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                              </a>
                             </div>
                         </div>
-                        <ul class="nav nav-top pull-right">
-                            <li class="active"><a href="#" class="hover-style">Home</a></li>
-                            <li><a href="#" class="hover-style">about us</a></li>
-                            <li><a href="#" class="hover-style">destination</a></li>
-                            <li><a href="#" class="hover-style">gallery</a></li>
-                            <li><a href="#" class="hover-style">contact us</a></li>
-                        </ul>
                     </div>
                 </div>
                 <footer>
@@ -61,6 +106,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
