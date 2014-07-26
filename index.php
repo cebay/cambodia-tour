@@ -32,11 +32,11 @@
                     </div>
                     <div class="col-xs-9">
                         <ul class="nav nav-top pull-right">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">about us</a></li>
-                            <li><a href="#">destination</a></li>
-                            <li><a href="#">gallery</a></li>
-                            <li><a href="#">contact us</a></li>
+                            <li class="active"><a href="#" class="hover-style">Home</a></li>
+                            <li><a href="#" class="hover-style">about us</a></li>
+                            <li><a href="#" class="hover-style">destination</a></li>
+                            <li><a href="#" class="hover-style">gallery</a></li>
+                            <li><a href="#" class="hover-style">contact us</a></li>
                         </ul>
                     </div>
                 </div>
