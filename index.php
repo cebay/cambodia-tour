@@ -140,6 +140,127 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4>new1</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                    <p>readmore</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <div class="panel panel-default">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="panel-body">
+                                            <ul class="media-list">
+                                                <li class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="panel-body">
+                                            <ul class="media-list">
+                                                <li class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="panel-body">
+                                            <ul class="media-list">
+                                                <li class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="panel-body">
+                                            <ul class="media-list">
+                                                <li class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                     <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="panel-body">
+                                            <ul class="media-list">
+                                                <li class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                     <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="panel-body">
+                                            <ul class="media-list">
+                                                <li class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <footer>
                 </footer>
