@@ -136,6 +136,9 @@ ul.nav-top a:hover {
        -moz-border-radius: 5px;
             border-radius: 5px;
 }
+.main-panels {
+    margin-top: 30px;
+}
 
 @media screen and (min-width: 768px) {
     ul.nav-top li {

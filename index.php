@@ -108,6 +108,38 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row main-panels">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h4>About Cambodia</h4>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <h4>Popular Destinations</h4>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h4>Holidays &amp; Activities</h4>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <footer>
                 </footer>
