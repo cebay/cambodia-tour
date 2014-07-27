@@ -156,6 +156,19 @@ ul.nav-top a:hover {
     text-align: center;
     font-size: 12px;
 }
+.info {
+    border-top: 1px solid #eee;
+}
+.info:first-child {
+    border-top: 0;
+}
+.info-img img{
+    margin: 10px auto;
+}
+.info-title {
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 15px;
+}
 
 @media screen and (min-width: 768px) {
     ul.nav-top li {
