@@ -163,7 +163,7 @@ ul.nav-top a:hover {
     border-top: 0;
 }
 .info-img img{
-    margin: 10px auto;
+    margin: 15px auto;
 }
 .info-title {
     border-bottom: 1px dashed #ddd;
@@ -174,6 +174,24 @@ ul.nav-top a:hover {
     ul.nav-top li {
         display: inline-block;
     }
+}
+
+/*about us page*/
+.about-us {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.about-title {
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.about-short-desc {
+    color:orange;
+    font-style: italic;
+    font-weight: bold;
+}
+.about-breadscrumb {
+    margin-top: 20px;
 }
 
 

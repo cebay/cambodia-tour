@@ -162,7 +162,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <div class="row info">
-                                        <div class="col-xs-9">
+                                        <div class="col-xs-12 col-sm-9">
                                             <h5 class="info-title">
                                                 Lorem ipsum dolor
                                             </h5>
@@ -173,12 +173,12 @@
                                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                         </div>
-                                        <div class="col-xs-3 info-img">
+                                        <div class="col-xs-12 col-sm-3 info-img">
                                             <img src="images/island.jpg" alt="island.jpg" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="row info">
-                                        <div class="col-xs-9">
+                                        <div class="col-xs-12 col-sm-9">
                                             <h5 class="info-title">
                                                 Lorem ipsum dolor
                                             </h5>
@@ -189,12 +189,12 @@
                                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                         </div>
-                                        <div class="col-xs-3 info-img">
+                                        <div class="col-xs-12 col-sm-3 info-img">
                                             <img src="images/island.jpg" alt="island.jpg" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="row info">
-                                        <div class="col-xs-9">
+                                        <div class="col-xs-12 col-sm-9">
                                             <h5 class="info-title">
                                                 Lorem ipsum dolor
                                             </h5>
@@ -205,7 +205,7 @@
                                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                         </div>
-                                        <div class="col-xs-3 info-img">
+                                        <div class="col-xs-12 col-sm-3 info-img">
                                             <img src="images/island.jpg" alt="island.jpg" class="thumbnail">
                                         </div>
                                     </div>
