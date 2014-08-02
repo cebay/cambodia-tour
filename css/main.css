@@ -216,7 +216,12 @@ ul.nav-top a:hover {
     font-weight: bold;
     font-style: normal;
 }
+.item { 
+    width: 25%; 
+    margin-bottom: 10px; 
+}
 
+/*@media screen and (max-width: 320px) { .box { position: relative !important; }}*/
 
 
 

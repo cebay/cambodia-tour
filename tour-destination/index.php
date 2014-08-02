@@ -15,8 +15,9 @@
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/main.css">
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -106,7 +107,41 @@
                         View more &raquo;<br>
                         <span>destination</span>
                     </h5>
-
+                    <div id="masonry-container">
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/1.jpg">
+                        </div>
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/2.jpg">
+                        </div>
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/3.jpg">
+                        </div>
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/4.jpg">
+                        </div>
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/5.jpg">
+                        </div>
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/6.jpg">
+                        </div>
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/7.jpg">
+                        </div>
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/8.jpg">
+                        </div>
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/9.jpg">
+                        </div>
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/10.jpg">
+                        </div>
+                        <div class="box col3 item">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/11.jpg">
+                        </div>
+                    </div>
                 </div>
                 <footer>
                     <div class="row">
@@ -125,10 +160,26 @@
         </div>
 
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/vendor/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
+        <script type="text/javascript">
+            var container = document.querySelector('#masonry-container');
+            var msnry = new Masonry( container, {
+              // options
+              columnWidth: 110,
+              itemSelector: '.item',
+              animate: true,
+              isOriginLeft: false,
+              animationOptions: {
+                duration: 700,
+                queue: true
+              }
+            });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
