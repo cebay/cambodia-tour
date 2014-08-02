@@ -134,7 +134,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading"><h2>Map</h2></div>
                             <div class="panel-body">
-                                
+                                <div id="map-canvas" style="width: 100%; height: 350px"></div>
                             </div>
                         </div>
                     </div>
@@ -160,6 +160,21 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn4-06AFYcsK0Zh5tXE1dauw1BPkS9Kds"></script>
+        <script type="text/javascript">
+          function initialize() {
+            var mapOptions = {
+              center: new google.maps.LatLng(-34.397, 150.644),
+              zoom: 8
+            };
+            var map = new google.maps.Map(document.getElementById("map-canvas"),
+                mapOptions);
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
