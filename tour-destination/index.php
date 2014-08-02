@@ -72,8 +72,41 @@
                         <p class="about-breadscrumb">home &raquo; tour-destination</p>
                     </div>
                     <div class="row">
-                        
+                        <div class="col-xs-12 col-sm-7">
+                            <img src="../images/tour-destination/tour-slide1.jpg" class="img-responsive tour-slide">
+                            
+                            <ul class='thumb'>
+                                <li>
+                                    <img src="../images/tour-destination/thumbs.jpg" class="img-thumbnail">  
+                                </li>
+                                <li>
+                                    <img src="../images/tour-destination/thumbs.jpg" class="img-thumbnail">  
+                                </li>
+                                <li>
+                                    <img src="../images/tour-destination/thumbs.jpg" class="img-thumbnail">  
+                                </li>
+                                <li>
+                                    <img src="../images/tour-destination/thumbs.jpg" class="img-thumbnail">  
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hidden-xs col-sm-5">
+                            <h1>::Special Destination::</h1>
+                            <h2>Lorem ipsum dolor sit amet</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+                            <p></p>
+                        </div>
                     </div>
+                    <h5 class='more-dest'>
+                        View more &raquo;<br>
+                        <span>destination</span>
+                    </h5>
+
                 </div>
                 <footer>
                     <div class="row">

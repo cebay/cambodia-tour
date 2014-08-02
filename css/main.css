@@ -194,7 +194,28 @@ ul.nav-top a:hover {
     margin-top: 20px;
 }
 
+/*tour destination page*/
 
+.tour-slide {
+    padding: 3px;
+    border: 1px solid #ccc;
+}
+.thumb {
+    margin-top: 10px;
+    padding: 0;
+}
+.thumb li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.more-dest {
+    font-style: italic;
+}
+.more-dest span {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+}
 
 
 
