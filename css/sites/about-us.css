@@ -1,0 +1,17 @@
+/*about us page*/
+.about-us {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.about-title {
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.about-short-desc {
+    color:orange;
+    font-style: italic;
+    font-weight: bold;
+}
+.about-breadscrumb {
+    margin-top: 20px;
+}

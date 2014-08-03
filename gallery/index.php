@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sites/gallery.css">
         <link rel="stylesheet" href="../css/main.css">
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -72,103 +73,103 @@
                         <p class="about-breadscrumb">home &raquo; galleries</p>
                     </div>
                     <div class="collage">
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/1.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/2.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/3.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/4.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/5.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/6.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/7.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/8.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/9.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/10.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/11.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/12.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/13.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/14.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/15.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/16.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/17.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/18.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/19.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/20.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/21.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/22.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/12.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/13.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/14.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/15.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/16.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/17.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/18.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/19.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/20.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/21.jpg">
                         </div>
-                        <div class="item">
+                        <div class="c-item">
                             <img class="img-thumbnail" src="../images/galleries/collage/22.jpg">
                         </div>
                     </div>
@@ -199,7 +200,7 @@
         <script type="text/javascript" src="../js/jquery.row-grid.min.js"></script>
         <script>
             $(document).ready(function(){
-                $(".collage").rowGrid({itemSelector: ".item", minMargin: 10, maxMargin: 25, firstItemClass: "first-item"});
+                $(".collage").rowGrid({itemSelector: ".c-item", minMargin: 10, maxMargin: 25, firstItemClass: "first-item"});
             });
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

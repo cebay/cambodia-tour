@@ -1,0 +1,30 @@
+
+/*collage*/
+/* clearfix because of floats */
+.collage:before,
+.collage:after {
+    content: "";
+    display: table;
+}
+.collage:after {
+    clear: both;
+}
+.c-item {
+  float: left;
+  margin-bottom: 15px; 
+}
+.c-item img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+.first-item {
+  clear: both;
+}
+/* remove margin bottom on last row */
+.last-row, .last-row ~ .c-item {
+  margin-bottom: 0;
+}
+
+/*@media screen and (max-width: 320px) { .box { position: relative !important; }}*/
+

@@ -1,0 +1,78 @@
+.container-full-width {
+    background: url("../images/bgback.jpg") repeat-y scroll center center rgba(0, 0, 0, 0);
+    height: 400px;
+    width: 100%;
+}
+.main-content {
+    clear: both;
+}
+#nav-custom {
+    background: none;
+    border: none;
+}
+#nav-custom .navbar-header {
+    margin-top: 30px;
+}
+#nav-custom a {
+    background: transparent;
+}
+#nav-custom a:hover {
+    background-color: #FFCC00;
+    color: white;
+}
+ul.nav-top a {
+    text-transform: uppercase;
+}
+ul.nav-top a:hover {
+    background-color: #FFCC00;
+    color: white;
+}
+.hover-style:hover {
+    -webkit-transition: 0.3s;
+       -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+         -o-transition: 0.3s;
+            transition: 0.3s;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+}
+.main-panels {
+    margin-top: 30px;
+}
+.footer-menu-lists {
+    text-align: center;
+}
+.footer-menu-lists li{
+    border-left: 1px solid #ccc;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding:0 15px;
+}
+.footer-menu-lists li:first-child{
+    border-left: 0;
+}
+.copy-right {
+    text-align: center;
+    font-size: 12px;
+}
+.info {
+    border-top: 1px solid #eee;
+}
+.info:first-child {
+    border-top: 0;
+}
+.info-img img{
+    margin: 15px auto;
+}
+.info-title {
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    ul.nav-top li {
+        display: inline-block;
+    }
+}
