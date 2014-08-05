@@ -30,24 +30,27 @@
                     <nav class="navbar navbar-default navbar-fixed-top" role="banner">
                       <div class="container">
                         <div class="navbar-header">
-                            <a href="/" class="navbar-brand">Bootply</a>
+                            <img width="60" src="../images/asian-tour-logo.jpg" id="logo" class="pull-left">
+                            <a href="/" class="navbar-brand" id="listing-name"> Radin's Tour Company</a>
                             <ul class="nav nav-tabs pull-right visible-xs">
                                 <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tab3 <b class="caret"></b></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> radin-reth <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Three</a></li>
-                                    <li><a href="#">Four</a></li>
+                                    <li><a href="#">Edit Profile</a></li>
+                                    <li><a href="#">Change Password</a></li>
+                                    <li><a href="#">Logout</a></li>
                                 </ul>
                                 </li>
                             </ul>
                         </div>
                         <nav class="collapse navbar-collapse" role="navigation">
-                            <ul class="nav nav-tabs pull-right">
+                            <ul class="nav nav-tabs pull-right nav-config">
                                 <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tab3 <b class="caret"></b></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> radin-reth <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Three</a></li>
-                                    <li><a href="#">Four</a></li>
+                                    <li><a href="#">Edit Profile</a></li>
+                                    <li><a href="#">Change Password</a></li>
+                                    <li><a href="#">Logout</a></li>
                                 </ul>
                                 </li>
                             </ul>
@@ -61,11 +64,11 @@
                           <!--left-->
                             <div class="col-md-3" id="leftCol">
                                 <ul class="nav nav-stacked" id="sidebar">
-                                    <li><a href="#sec0">Section 0</a></li>
-                                    <li><a href="#sec1">Section 1</a></li>
-                                    <li><a href="#sec2">Section 2</a></li>
-                                    <li><a href="#sec3">Section 3</a></li>
-                                    <li><a href="#sec4">Section 4</a></li>
+                                    <li><a href="#sec0"><span class="glyphicon glyphicon-home"></span> &nbsp; Homepage</a></li>
+                                    <li><a href="#sec1"><span class="glyphicon glyphicon-user"></span> &nbsp; About Us</a></li>
+                                    <li><a href="#sec2"><span class="glyphicon glyphicon-globe"></span> &nbsp; Tour Destination</a></li>
+                                    <li><a href="#sec3"><span class="glyphicon glyphicon-picture"></span> &nbsp; Gallery</a></li>
+                                    <li><a href="#sec4"><span class="glyphicon glyphicon-earphone"></span> &nbsp; Contact Us</a></li>
                                 </ul>
                             </div><!--/left-->
                           

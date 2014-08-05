@@ -69,3 +69,16 @@ body {
   padding: 0;
   background: transparent;
 }
+
+#listing-name {
+  margin: 5px 0;
+}
+.nav-config {
+  margin-top: 15px;
+  border: 0;
+}
+.nav-config li a {
+  border: 0;
+  margin: 0;
+  padding-left: 15px;
+}
