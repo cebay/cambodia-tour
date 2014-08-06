@@ -31,7 +31,7 @@
                       <div class="container">
                         <div class="navbar-header">
                             <img width="60" src="../images/asian-tour-logo.jpg" id="logo" class="pull-left">
-                            <a href="../" class="navbar-brand" id="listing-name"> Radin's Tour Company</a>
+                            <a href="/" class="navbar-brand" id="listing-name"> Radin's Tour Company</a>
                             <ul class="nav nav-tabs pull-right visible-xs">
                                 <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> radin-reth <b class="caret"></b></a>
@@ -59,7 +59,7 @@
                     </nav>
 
                     <!--main-->
-                    <div class="container">
+                    <div class="container content-wrapper">
                         <div class="row">
                           <!--left-->
                             <div class="col-md-3" id="leftCol">
@@ -74,24 +74,63 @@
                           
                           <!--right-->
                           <div class="col-md-9">
-                            
-                            <h1>Welcome to Radin's Tour Company</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                            <hr>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
-                          </div><!--/right-->
+                              <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                  <div class="logo">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading title-bar">
+                                            <h4>logo</h4>
+                                            <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                              <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                            </a>
+                                        </div>
+                                        <div class="panel-body">
+                                            <img src="../images/asian-tour-logo.jpg">
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                  <div class="logo">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading title-bar">
+                                            <h4>
+                                              basic info
+                                            </h4>
+                                            <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                              <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                            </a>
+                                        </div>
+                                        <div class="panel-body">
+                                            <dl class="dl-horizontal">
+                                              <dt>Email: </dt>
+                                                <dd>radin.reth@gmail.com</dd>
+                                              <dt>Tel: </dt>
+                                                <dd>093 555 225</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="logo">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading title-bar">
+                                            <h4>map</h4>
+                                            <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                              <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                            </a>
+                                        </div>
+                                        <div class="panel-body">
+                                            
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
                         </div><!--/row-->
                     </div><!--/container-->
                 </div>

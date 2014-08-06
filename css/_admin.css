@@ -82,3 +82,14 @@ body {
   margin: 0;
   padding-left: 15px;
 }
+.content-wrapper {
+  margin-top: 30px;
+}
+.title-bar * {
+  display: inline-block;
+}
+.edit-ico {
+  float: right;
+  margin-top: 7px;
+  padding: 6px;
+}
