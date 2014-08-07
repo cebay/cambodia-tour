@@ -110,3 +110,12 @@ body {
 .img-wrapper img {
   margin: 0 auto;
 }
+.plus-wrapper {
+  border: 1px dashed #ccc;
+  vertical-align: middle;
+  text-align: center;
+  height: 157px;
+}
+.plus-wrapper span {
+  display: block;
+}

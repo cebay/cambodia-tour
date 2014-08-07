@@ -76,8 +76,8 @@
                           <div class="col-md-9">
                             <div class="row">
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                <div class="img-wrapper">
-                                  <img src="../images/galleries/collage/1.jpg" class="img-responsive">
+                                <div class="plus-wrapper">
+                                  <span class="plus">+</span> Add photos
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
