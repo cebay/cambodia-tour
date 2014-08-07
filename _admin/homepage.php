@@ -63,8 +63,8 @@
                         <div class="row">
                           <!--left-->
                             <div class="col-md-3" id="leftCol">
-                                <ul class="nav nav-stacked" id="sidebar">
-                                    <li><a href="homepage.php"><span class="glyphicon glyphicon-home"></span> &nbsp; Homepage</a></li>
+                                <ul class="nav nav-stacked nav-menu" id="sidebar">
+                                    <li><a href="../_admin"><span class="glyphicon glyphicon-home"></span> &nbsp; Homepage</a></li>
                                     <li><a href="about-us.php"><span class="glyphicon glyphicon-user"></span> &nbsp; About Us</a></li>
                                     <li><a href="tour-destination.php"><span class="glyphicon glyphicon-globe"></span> &nbsp; Tour Destination</a></li>
                                     <li><a href="gallery.php"><span class="glyphicon glyphicon-picture"></span> &nbsp; Gallery</a></li>
@@ -102,6 +102,8 @@
                                             </a>
                                         </div>
                                         <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna...</p>
                                             <dl class="dl-horizontal">
                                               <dt>Email: </dt>
                                                 <dd>radin.reth@gmail.com</dd>

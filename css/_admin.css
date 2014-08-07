@@ -88,8 +88,25 @@ body {
 .title-bar * {
   display: inline-block;
 }
+.title-bar h4 {
+  text-transform: capitalize;
+}
 .edit-ico {
   float: right;
   margin-top: 7px;
   padding: 6px;
+}
+.nav-menu li {
+  border-bottom: 1px solid #eee;
+  margin-top: 0;
+}
+.img-wrapper {
+  height: 157px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.img-wrapper img {
+  margin: 0 auto;
 }
