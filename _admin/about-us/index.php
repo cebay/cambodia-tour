@@ -12,11 +12,12 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" type="text/css" href="../css/_admin.css">
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/about-us.css">
+        <link rel="stylesheet" type="text/css" href="../../css/_admin.css">
+        <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 
     </head>
     <body>
@@ -30,7 +31,7 @@
                     <nav class="navbar navbar-default navbar-fixed-top" role="banner">
                       <div class="container">
                         <div class="navbar-header">
-                            <img width="60" src="../images/asian-tour-logo.jpg" id="logo" class="pull-left">
+                            <img width="60" src="../../images/asian-tour-logo.jpg" id="logo" class="pull-left">
                             <a href="/" class="navbar-brand" id="listing-name"> Radin's Tour Company</a>
                             <ul class="nav nav-tabs pull-right visible-xs">
                                 <li class="dropdown">
@@ -76,42 +77,69 @@
                           <div class="col-md-9">
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
-                                    <h4>logo</h4>
+                                    <h4>radin</h4>
                                     <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
                                       <span class="glyphicon glyphicon-pencil pull-right"></span>
                                     </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="row">
-                                      <div class="col-xs-12 col-sm-4"></div>
-                                      <div class="col-xs-12 col-sm-8">
-                                         <div class="form-group">
-                                         <label for="inputEmail1" class="col-lg-2 control-label">Title</label>
-                                         <div class="col-lg-10">
-                                           <input type="email" class="form-control" id="inputEmail1" placeholder="Title">
-                                         </div>
-                                         </div>
-                                         <div class="form-group">
-                                         <label for="inputPassword1" class="col-lg-2 control-label">Description</label>
-                                         <div class="col-lg-10">
-                                           <textarea rows="5" name="message" id="message" class="form-control"></textarea>
-                                         </div>
-                                         </div>
-                                         <div class="form-group">
-                                         <div class="col-lg-offset-2 col-lg-10">
-                                           <div class="checkbox">
-                                             <label>
-                                               <input type="checkbox"> Remember me
-                                             </label>
-                                           </div>
-                                         </div>
-                                         </div>
-                                         <div class="form-group">
-                                         <div class="col-lg-offset-2 col-lg-10">
-                                           <button type="submit" class="btn btn-default">Sign in</button>
-                                         </div>
-                                         </div>
-                                        </form>
+                                      <div class="col-xs-4">
+                                        <div class="thumb-about"></div>
+                                      </div>
+                                      <div class="col-xs-8">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading title-bar">
+                                    <h4>radin</h4>
+                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                    </a>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                      <div class="col-xs-4">
+                                        <div class="thumb-about"></div>
+                                      </div>
+                                      <div class="col-xs-8">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading title-bar">
+                                    <h4>radin</h4>
+                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                    </a>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                      <div class="col-xs-4">
+                                        <div class="thumb-about"></div>
+                                      </div>
+                                      <div class="col-xs-8">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                       </div>
                                     </div>
                                 </div>
@@ -124,11 +152,11 @@
         </div>
 
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-        <script src="../js/vendor/bootstrap.min.js"></script>
-        <script type="text/javascript" src="../js/_admin.js"></script>
+        <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="../../js/plugins.js"></script>
+        <script src="../../js/main.js"></script>
+        <script src="../../js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../js/_admin.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
