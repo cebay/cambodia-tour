@@ -12,11 +12,11 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" type="text/css" href="../css/_admin.css">
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../../css/_admin.css">
+        <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 
     </head>
     <body>
@@ -30,7 +30,7 @@
                     <nav class="navbar navbar-default navbar-fixed-top" role="banner">
                       <div class="container">
                         <div class="navbar-header">
-                            <img width="60" src="../images/asian-tour-logo.jpg" id="logo" class="pull-left">
+                            <img width="60" src="../../images/asian-tour-logo.jpg" id="logo" class="pull-left">
                             <a href="/" class="navbar-brand" id="listing-name"> Radin's Tour Company</a>
                             <ul class="nav nav-tabs pull-right visible-xs">
                                 <li class="dropdown">
@@ -85,7 +85,7 @@
                                             </a>
                                         </div>
                                         <div class="panel-body">
-                                            <img src="../images/asian-tour-logo.jpg">
+                                            <img src="../../images/asian-tour-logo.jpg">
                                         </div>
                                     </div>
                                   </div>
@@ -140,11 +140,11 @@
         </div>
 
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-        <script src="../js/vendor/bootstrap.min.js"></script>
-        <script type="text/javascript" src="../js/_admin.js"></script>
+        <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="../../js/plugins.js"></script>
+        <script src="../../js/main.js"></script>
+        <script src="../../js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../js/_admin.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
