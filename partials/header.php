@@ -28,13 +28,13 @@
         <div class="collapse navbar-collapse navbar-ex-collapse navbar-collapse-wrapper">
             <ul class="nav navbar-nav nav-top pull-right">
                 <li class="active">
-                    <a href="<?php echo $path; ?>" class="hover-style">Home</a>
+                    <a href="<?php echo $path.'#'; ?>" class="hover-style">Home</a>
                 </li>
                 <li>
                     <a href="<?php echo $path.'about-us'; ?>" class="hover-style">about us</a>
                 </li>
                 <li>
-                    <a href="<?php echo $path.'tour-destination'; ?>" class="hover-style">destination</a>
+                    <a href="<?php echo $path.'tour-destination'; ?>" class="hover-style">tour destination</a>
                 </li>
                 <li>
                     <a href="<?php echo $path.'gallery'; ?>" class="hover-style">gallery</a>
