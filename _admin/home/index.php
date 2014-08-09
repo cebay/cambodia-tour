@@ -41,8 +41,14 @@
                           <!--right-->
                           <div class="col-md-9">
                             <div class="panel panel-default">
-                                <div class="panel-heading">
+                                <div class="panel-heading title-bar">
                                     <h5>home slideshow</h5>
+                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-trash pull-right"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-xs-12 col-sm-4">
@@ -60,8 +66,14 @@
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading">
+                                <div class="panel-heading title-bar">
                                     <h5>Short Desc.</h5>
+                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-trash pull-right"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-xs-12 col-sm-4">
@@ -79,8 +91,14 @@
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading">
+                                <div class="panel-heading title-bar">
                                     <h5>blog</h5>
+                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-trash pull-right"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-xs-12 col-sm-4">
@@ -98,8 +116,14 @@
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading">
+                                <div class="panel-heading title-bar">
                                     <h5>News</h5>
+                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-trash pull-right"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-xs-12 col-sm-4">
@@ -117,8 +141,14 @@
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading">
+                                <div class="panel-heading title-bar">
                                     <h5>Popular places</h5>
+                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-trash pull-right"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-xs-12 col-sm-4">

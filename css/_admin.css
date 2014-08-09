@@ -91,10 +91,13 @@ body {
 .title-bar h4 {
   text-transform: capitalize;
 }
-.edit-ico {
+.edit-ico, .trash-ico {
   float: right;
   margin-top: 7px;
   padding: 6px;
+}
+.trash-ico {
+  margin-left: 5px;
 }
 .nav-menu li {
   border-bottom: 1px solid #eee;
