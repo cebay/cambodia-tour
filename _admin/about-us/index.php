@@ -40,9 +40,19 @@
                           
                           <!--right-->
                           <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-xs-12 add-new">
+                                    <button type="button" class="btn btn-success pull-right">
+                                      <span class="glyphicon glyphicon-plus"></span> Add New
+                                    </button>
+                                </div>
+                            </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h4>radin</h4>
+                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-trash pull-right"></span>
+                                    </a>
                                     <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
                                       <span class="glyphicon glyphicon-pencil pull-right"></span>
                                     </a>
@@ -66,6 +76,9 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h4>radin</h4>
+                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-trash pull-right"></span>
+                                    </a>
                                     <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
                                       <span class="glyphicon glyphicon-pencil pull-right"></span>
                                     </a>
@@ -89,6 +102,9 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h4>radin</h4>
+                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-trash pull-right"></span>
+                                    </a>
                                     <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
                                       <span class="glyphicon glyphicon-pencil pull-right"></span>
                                     </a>
