@@ -12,11 +12,11 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" type="text/css" href="../css/_admin.css">
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../../css/_admin.css">
+        <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 
     </head>
     <body>
@@ -27,49 +27,14 @@
         <div class="container-full-width">
             <div class="container">
                 <div class="main-content">
-                    <nav class="navbar navbar-default navbar-fixed-top" role="banner">
-                      <div class="container">
-                        <div class="navbar-header">
-                            <img width="60" src="../images/asian-tour-logo.jpg" id="logo" class="pull-left">
-                            <a href="/" class="navbar-brand" id="listing-name"> Radin's Tour Company</a>
-                            <ul class="nav nav-tabs pull-right visible-xs">
-                                <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> radin-reth <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Edit Profile</a></li>
-                                    <li><a href="#">Change Password</a></li>
-                                    <li><a href="#">Logout</a></li>
-                                </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <nav class="collapse navbar-collapse" role="navigation">
-                            <ul class="nav nav-tabs pull-right nav-config">
-                                <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> radin-reth <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Edit Profile</a></li>
-                                    <li><a href="#">Change Password</a></li>
-                                    <li><a href="#">Logout</a></li>
-                                </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                      </div>
-                    </nav>
+                    <?php include("../partials/header.php"); ?>
 
                     <!--main-->
                     <div class="container content-wrapper">
                         <div class="row">
                           <!--left-->
                             <div class="col-md-3" id="leftCol">
-                                <ul class="nav nav-stacked nav-menu" id="sidebar">
-                                    <li><a href="../_admin"><span class="glyphicon glyphicon-home"></span> &nbsp; Homepage</a></li>
-                                    <li><a href="about-us.php"><span class="glyphicon glyphicon-user"></span> &nbsp; About Us</a></li>
-                                    <li><a href="tour-destination.php"><span class="glyphicon glyphicon-globe"></span> &nbsp; Tour Destination</a></li>
-                                    <li><a href="gallery.php"><span class="glyphicon glyphicon-picture"></span> &nbsp; Gallery</a></li>
-                                    <li><a href="contact-us.php"><span class="glyphicon glyphicon-earphone"></span> &nbsp; Contact Us</a></li>
-                                </ul>
+                                <?php include("../partials/nav.php"); ?>
                             </div><!--/left-->
                           
                           <!--right-->
@@ -85,7 +50,7 @@
                                             </a>
                                         </div>
                                         <div class="panel-body">
-                                            <img src="../images/asian-tour-logo.jpg">
+                                            <img src="../../images/asian-tour-logo.jpg" alt="logo">
                                         </div>
                                     </div>
                                   </div>
@@ -140,11 +105,11 @@
         </div>
 
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-        <script src="../js/vendor/bootstrap.min.js"></script>
-        <script type="text/javascript" src="../js/_admin.js"></script>
+        <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="../../js/plugins.js"></script>
+        <script src="../../js/main.js"></script>
+        <script src="../../js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../js/_admin.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
