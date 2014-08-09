@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="../../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/home.css">
         <link rel="stylesheet" type="text/css" href="../../css/_admin.css">
         <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -39,64 +40,101 @@
                           
                           <!--right-->
                           <div class="col-md-9">
-                              <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                  <div class="logo">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading title-bar">
-                                            <h4>logo</h4>
-                                            <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                              <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                            </a>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5>home slideshow</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <img src="../../images/tour-destination/tour-slide.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+
+                                        <div class="img-upload">
                                         </div>
-                                        <div class="panel-body">
-                                            <img src="../../images/asian-tour-logo.jpg" alt="logo">
+                                        <div class="img-upload">
+                                        </div>
+                                        <div class="img-upload">
                                         </div>
                                     </div>
-                                  </div>
                                 </div>
-                                <div class="col-xs-12 col-md-6">
-                                  <div class="logo">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading title-bar">
-                                            <h4>
-                                              basic info
-                                            </h4>
-                                            <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                              <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                            </a>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5>Short Desc.</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <img src="../../images/tour-destination/tour-slide.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+
+                                        <div class="img-upload">
                                         </div>
-                                        <div class="panel-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna...</p>
-                                            <dl class="dl-horizontal">
-                                              <dt>Email: </dt>
-                                                <dd>radin.reth@gmail.com</dd>
-                                              <dt>Tel: </dt>
-                                                <dd>093 555 225</dd>
-                                            </dl>
+                                        <div class="img-upload">
+                                        </div>
+                                        <div class="img-upload">
                                         </div>
                                     </div>
-                                  </div>
                                 </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-xs-12">
-                                  <div class="logo">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading title-bar">
-                                            <h4>map</h4>
-                                            <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                              <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                            </a>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5>blog</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <img src="../../images/tour-destination/tour-slide.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+
+                                        <div class="img-upload">
                                         </div>
-                                        <div class="panel-body">
-                                            
+                                        <div class="img-upload">
+                                        </div>
+                                        <div class="img-upload">
                                         </div>
                                     </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5>News</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <img src="../../images/tour-destination/tour-slide.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+
+                                        <div class="img-upload">
+                                        </div>
+                                        <div class="img-upload">
+                                        </div>
+                                        <div class="img-upload">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5>Popular places</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <img src="../../images/tour-destination/tour-slide.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+
+                                        <div class="img-upload">
+                                        </div>
+                                        <div class="img-upload">
+                                        </div>
+                                        <div class="img-upload">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                           </div>
                         </div><!--/row-->
                     </div><!--/container-->

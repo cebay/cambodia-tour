@@ -1,0 +1,7 @@
+.img-upload {
+	width: 120px;
+	height: 120px;
+	background: #ccc;
+	border-radius: 4px;
+	display: inline-block;
+}
