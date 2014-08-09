@@ -173,6 +173,7 @@ ul.nav-top a {
 @media screen and (min-width: 768px) {
     ul.nav-top li {
         display: inline-block;
+        margin: 0 5px;
     }
 }
 

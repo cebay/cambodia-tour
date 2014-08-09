@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" href="../../css/main.css">
         <link rel="stylesheet" type="text/css" href="../../css/_admin.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
         <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 
     </head>
@@ -113,6 +114,7 @@
         <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="../../js/plugins.js"></script>
         <script src="../../js/main.js"></script>
+        <script type="text/javascript" src="../js/app.js"></script>
         <script src="../../js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="../../js/_admin.js"></script>
 
