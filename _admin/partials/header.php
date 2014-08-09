@@ -9,11 +9,11 @@
         <a href="../" class="navbar-brand" id="listing-name"> Radin's Tour Company</a>
         <ul class="nav nav-tabs pull-right visible-xs">
             <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> radin-reth <b class="caret"></b></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">radin-reth@gmail.com <b class="caret"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="#">Edit Profile</a></li>
-                <li><a href="#">Change Password</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-edit"></span>&emsp;Edit Profile</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&emsp;Change Password</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&emsp;Logout</a></li>
             </ul>
             </li>
         </ul>
@@ -21,11 +21,11 @@
     <nav class="collapse navbar-collapse" role="navigation">
         <ul class="nav nav-tabs pull-right nav-config">
             <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> radin-reth <b class="caret"></b></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">radin-reth@gmail.com <b class="caret"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="#">Edit Profile</a></li>
-                <li><a href="#">Change Password</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-edit"></span>&emsp;Edit Profile</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&emsp;Change Password</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&emsp;Logout</a></li>
             </ul>
             </li>
         </ul>
