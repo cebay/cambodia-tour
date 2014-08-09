@@ -40,6 +40,13 @@
                           <!--right-->
                           <div class="col-md-9">
                             <div class="row">
+                                <div class="col-xs-12 add-new">
+                                    <a href="index.php" role="button" class="btn btn-default pull-right">
+                                      <span class="glyphicon glyphicon-arrow-left"></span> Back
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-xs-12"><h2>Tour Slideshow</h2></div>
                                 <div class="col-xs-12 col-sm-7">
                                     <form class="form-horizontal" role="form">
