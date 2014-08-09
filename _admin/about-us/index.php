@@ -42,9 +42,9 @@
                           <div class="col-md-9">
                             <div class="row">
                                 <div class="col-xs-12 add-new">
-                                    <button type="button" class="btn btn-success pull-right">
+                                    <a href="upsert.php" role="button" class="btn btn-success pull-right">
                                       <span class="glyphicon glyphicon-plus"></span> Add New
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                             <div class="panel panel-default">

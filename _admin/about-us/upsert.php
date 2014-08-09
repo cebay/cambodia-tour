@@ -28,58 +28,30 @@
         <div class="container-full-width">
             <div class="container">
                 <div class="main-content">
-                    <nav class="navbar navbar-default navbar-fixed-top" role="banner">
-                      <div class="container">
-                        <div class="navbar-header">
-                            <img width="60" src="../../images/asian-tour-logo.jpg" id="logo" class="pull-left">
-                            <a href="/" class="navbar-brand" id="listing-name"> Radin's Tour Company</a>
-                            <ul class="nav nav-tabs pull-right visible-xs">
-                                <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> radin-reth <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Edit Profile</a></li>
-                                    <li><a href="#">Change Password</a></li>
-                                    <li><a href="#">Logout</a></li>
-                                </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <nav class="collapse navbar-collapse" role="navigation">
-                            <ul class="nav nav-tabs pull-right nav-config">
-                                <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> radin-reth <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Edit Profile</a></li>
-                                    <li><a href="#">Change Password</a></li>
-                                    <li><a href="#">Logout</a></li>
-                                </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                      </div>
-                    </nav>
+                    <?php include("../partials/header.php"); ?>
 
                     <!--main-->
                     <div class="container content-wrapper">
                         <div class="row">
                           <!--left-->
                             <div class="col-md-3" id="leftCol">
-                                <ul class="nav nav-stacked" id="sidebar">
-                                    <li><a href="homepage.php"><span class="glyphicon glyphicon-home"></span> &nbsp; Homepage</a></li>
-                                    <li><a href="about-us.php"><span class="glyphicon glyphicon-user"></span> &nbsp; About Us</a></li>
-                                    <li><a href="tour-destination.php"><span class="glyphicon glyphicon-globe"></span> &nbsp; Tour Destination</a></li>
-                                    <li><a href="gallery.php"><span class="glyphicon glyphicon-picture"></span> &nbsp; Gallery</a></li>
-                                    <li><a href="contact-us.php"><span class="glyphicon glyphicon-earphone"></span> &nbsp; Contact Us</a></li>
-                                </ul>
+                                <?php include("../partials/nav.php"); ?>
                             </div><!--/left-->
                           
                           <!--right-->
                           <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-xs-12 add-new">
+                                    <a href="index.php" role="button" class="btn btn-default pull-right">
+                                      <span class="glyphicon glyphicon-arrow-left"></span> Back
+                                    </a>
+                                </div>
+                            </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h4>Add new</h4>
-                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
+                                      <span class="glyphicon glyphicon-trash pull-right"></span>
                                     </a>
                                 </div>
                                 <div class="panel-body">
