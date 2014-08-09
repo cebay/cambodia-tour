@@ -24,3 +24,13 @@
 .img-wrapper:hover .panel-delete {
 	display: block;
 }
+
+.plus-wrapper {
+  border: 2px dashed #ccc;
+  height: 157px;
+  border-radius: 4px;
+}
+.plus-wrapper p {
+  text-align: center;
+  margin-top: 66px;
+}

@@ -43,7 +43,7 @@
                             <div class="row">
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="plus-wrapper">
-                                  <span class="plus">+</span> Add photos
+                                  <p><span class="glyphicon glyphicon-plus"></span> Add photos</p>
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">

@@ -104,12 +104,3 @@ body {
   margin-top: 0;
 }
 
-.plus-wrapper {
-  border: 1px dashed #ccc;
-  vertical-align: middle;
-  text-align: center;
-  height: 157px;
-}
-.plus-wrapper span {
-  display: block;
-}
