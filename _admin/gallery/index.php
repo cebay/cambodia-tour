@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="../../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/gallery.css">
         <link rel="stylesheet" type="text/css" href="../../css/_admin.css">
         <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -47,16 +48,31 @@
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
                                 </div>
                               </div>
@@ -64,21 +80,41 @@
                             <div class="row">
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/1.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
                                 </div>
                               </div>
@@ -86,21 +122,41 @@
                             <div class="row">
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/1.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
                                 </div>
                               </div>
@@ -108,21 +164,41 @@
                             <div class="row">
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/1.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
                                 </div>
                               </div>
@@ -130,21 +206,41 @@
                             <div class="row">
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/1.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
                                 </div>
                               </div>
@@ -152,11 +248,21 @@
                             <div class="row">
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
+                                  <div class="panel-delete">
+                                    <button type="button" class="btn btn-default btn-xs">
+                                      <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                  </div>
                                   <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
                                 </div>
                               </div>

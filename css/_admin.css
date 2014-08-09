@@ -103,16 +103,7 @@ body {
   border-bottom: 1px solid #eee;
   margin-top: 0;
 }
-.img-wrapper {
-  height: 157px;
-  overflow: hidden;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-.img-wrapper img {
-  margin: 0 auto;
-}
+
 .plus-wrapper {
   border: 1px dashed #ccc;
   vertical-align: middle;
