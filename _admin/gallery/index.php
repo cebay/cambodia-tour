@@ -49,6 +49,8 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -59,6 +61,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -69,6 +72,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -81,6 +85,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -91,6 +96,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -101,6 +107,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -111,6 +118,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -123,6 +131,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -133,6 +142,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -143,6 +153,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -153,6 +164,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -165,6 +177,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -175,6 +188,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -185,6 +199,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -195,6 +210,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -207,6 +223,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -217,6 +234,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -227,6 +245,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -237,6 +256,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -249,6 +269,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
@@ -259,6 +280,7 @@
                               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                 <div class="img-wrapper">
                                   <div class="panel-delete">
+                                    <h3>title 1</h3>
                                     <button type="button" class="btn btn-default btn-xs">
                                       <span class="glyphicon glyphicon-trash"></span>
                                     </button>
