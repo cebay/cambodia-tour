@@ -20,6 +20,11 @@
 			$social 	 = $this->social;
 
 			$stmt = sprintf(CONTACT_SQL_INSERT, $description, $phone, $email, $social);
+			return mysql_query($stmt);
 		}
+		// basic info
+		// save map, logo
+		// update
+		// delete
 	}
 ?>

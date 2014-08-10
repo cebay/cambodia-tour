@@ -10,7 +10,8 @@
 				`con_social`, 
 				`con_lat`, 
 				`con_long`, 
-				`user_id`) VALUES ('', '%s', '%s', '%s', '%s', '', '', '')");
+				`con_logo`, 
+				`user_id`) VALUES ('', '%s', '%s', '%s', '%s', '', '', '', '')");
 	define("CONTACT_SQL_UPDATE","");
 	define("CONTACT_SQL_DELETE","");
 

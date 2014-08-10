@@ -28,6 +28,16 @@
 
         <div class="container-full-width">
             <div class="container">
+                <?php
+                    if ($_GET['flash'] == 1) {
+                        echo '<div class="alert alert-success" role="alert" style="margin-top: 20px;">
+                                <button type="button" class="close" data-dismiss="alert">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>Basic Info has been save successfully!
+                            </div>';
+                    }
+                ?>
                 <div class="main-content">
                     <?php include("../partials/header.php"); ?>
 

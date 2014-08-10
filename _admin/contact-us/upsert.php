@@ -7,7 +7,11 @@
         $opr->contact->phone = $_POST['phone'];
         $opr->contact->social = $_POST['social'];
 
-        $opr->contact->save();
+        if (!$opr->contact->save()) {
+            echo "Cannot save Basic Info!";
+        } else {
+            header("location: index.php?flash=1"); exit();
+        }
     }
 ?>
 
@@ -42,7 +46,7 @@
         <div class="container-full-width">
             <div class="container">
                 <div class="main-content">
-                    <?php //include("../partials/header.php"); ?>
+                    <?php include("../partials/header.php"); ?>
 
                     <!--main-->
                     <div class="container content-wrapper">
