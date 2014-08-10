@@ -1,9 +1,8 @@
-<?php $current_page = 'root'; ?>
-
 <?php
     require("../config/class.php");
-    $conn = new Connection;
-    
+    $current_page = 'root'; 
+
+    var_dump($opr);
 ?>
 
 <!DOCTYPE html>
