@@ -1,7 +1,17 @@
 .img-upload {
 	width: 120px;
 	height: 120px;
-	background: #ccc;
 	border-radius: 4px;
 	display: inline-block;
+	border: 1px #ccc;
+	float: left;
+	margin-left: 5px;
+}
+.upload-img {
+	background: #fff;
+	border-style: dashed;
+}
+.prepare-img {
+	background: #ccc;
+	border-style: solid;
 }

@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="../../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/gallery.css">
         <link rel="stylesheet" type="text/css" href="../css/home.css">
         <link rel="stylesheet" type="text/css" href="../../css/_admin.css">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
@@ -47,24 +48,38 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h5>home slideshow</h5>
-                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-trash pull-right"></span>
-                                    </a>
-                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-xs-12 col-sm-4">
                                         <img src="../../images/tour-destination/tour-slide.jpg" class="img-responsive">
                                     </div>
                                     <div class="col-xs-12 col-sm-8">
-
-                                        <div class="img-upload">
+                                        <div class="img-upload upload-img">
+                                            <span class="glyphicon glyphicon-plus"></span> Upload Image
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -72,12 +87,6 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h5>Short Desc.</h5>
-                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-trash pull-right"></span>
-                                    </a>
-                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-xs-12 col-sm-4">
@@ -85,11 +94,32 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-8">
 
-                                        <div class="img-upload">
+                                        <div class="img-upload upload-img">
+                                            <span class="glyphicon glyphicon-plus"></span> Upload Image
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -97,12 +127,6 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h5>blog</h5>
-                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-trash pull-right"></span>
-                                    </a>
-                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-xs-12 col-sm-4">
@@ -110,11 +134,32 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-8">
 
-                                        <div class="img-upload">
+                                        <div class="img-upload upload-img">
+                                            <span class="glyphicon glyphicon-plus"></span> Upload Image
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -122,12 +167,6 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h5>News</h5>
-                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-trash pull-right"></span>
-                                    </a>
-                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-xs-12 col-sm-4">
@@ -135,11 +174,32 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-8">
 
-                                        <div class="img-upload">
+                                        <div class="img-upload upload-img">
+                                            <span class="glyphicon glyphicon-plus"></span> Upload Image
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -147,12 +207,6 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h5>Popular places</h5>
-                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-trash pull-right"></span>
-                                    </a>
-                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-xs-12 col-sm-4">
@@ -160,11 +214,32 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-8">
 
-                                        <div class="img-upload">
+                                        <div class="img-upload upload-img">
+                                            <span class="glyphicon glyphicon-plus"></span> Upload Image
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="panel-delete">
+                                                <h3>title 1</h3>
+                                                <button type="button" class="btn btn-default btn-xs">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
