@@ -139,7 +139,7 @@
         <script type="text/javascript" src="../js/jquery.form.js"></script>
 
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <script type="text/javascript" src="../js/gmap1.js"></script>
+        <script type="text/javascript" src="../js/gmap.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
