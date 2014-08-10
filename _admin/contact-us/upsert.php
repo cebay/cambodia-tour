@@ -107,7 +107,7 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="col-xs-12">
+                                <div class="col-xs-12 col-md-10 col-md-offset-2">
                                     <button type="submit" class="btn btn-success">Save</button>
                                     <button type="submit" class="btn btn-default">Cancel</button>
                                 </div>
