@@ -20,7 +20,6 @@
 			$social 	 = $this->social;
 
 			$stmt = sprintf(CONTACT_SQL_INSERT, $description, $phone, $email, $social);
-			
 		}
 	}
 ?>
