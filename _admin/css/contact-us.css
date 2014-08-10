@@ -1,12 +1,24 @@
 #mapCanvas {
-    width: 500px;
-    height: 400px;
-    float: left;
-  }
-  #infoPanel {
-    float: left;
-    margin-left: 10px;
-  }
-  #infoPanel div {
-    margin-bottom: 5px;
-  }
+  width: 500px;
+  height: 400px;
+  float: left;
+}
+#infoPanel {
+  float: left;
+  margin-left: 10px;
+}
+#infoPanel div {
+  margin-bottom: 5px;
+}
+.logo-wrapper {
+  text-align: center;
+}
+.logo-wrapper img {
+  height: 110px;  
+}
+.logo-wrapper p {
+  margin-top: 10px;
+}
+.com-dropdown {
+  margin-bottom: 15px;
+}

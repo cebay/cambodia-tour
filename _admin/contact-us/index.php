@@ -47,12 +47,12 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading title-bar">
                                             <h4>logo</h4>
-                                            <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                              <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                            </a>
                                         </div>
-                                        <div class="panel-body">
+                                        <div class="panel-body logo-wrapper">
                                             <img src="../../images/asian-tour-logo.jpg">
+                                            <p>
+                                                <a href="#">change logo</a>
+                                            </p>
                                         </div>
                                     </div>
                                   </div>
@@ -64,7 +64,7 @@
                                             <h4>
                                               basic info
                                             </h4>
-                                            <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                            <a href="upsert.php" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
                                               <span class="glyphicon glyphicon-pencil pull-right"></span>
                                             </a>
                                         </div>
@@ -88,9 +88,6 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading title-bar">
                                             <h4>map</h4>
-                                            <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                              <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                            </a>
                                         </div>
                                         <div class="panel-body">
                                             <div id="mapCanvas"></div>
@@ -123,7 +120,7 @@
         <script type="text/javascript" src="../../js/_admin.js"></script>
 
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <script type="text/javascript" src="../js/gmap.js"></script>
+        <script type="text/javascript" src="../js/gmap1.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
