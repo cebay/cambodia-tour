@@ -1,3 +1,16 @@
+<?php
+    require("../../config/class.php");
+
+    if ($_POST) {
+        $opr->contact->description = $_POST['description'];
+        $opr->contact->email = $_POST['email'];
+        $opr->contact->phone = $_POST['phone'];
+        $opr->contact->social = $_POST['social'];
+
+        $opr->contact->save();
+    }
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -29,7 +42,7 @@
         <div class="container-full-width">
             <div class="container">
                 <div class="main-content">
-                    <?php include("../partials/header.php"); ?>
+                    <?php //include("../partials/header.php"); ?>
 
                     <!--main-->
                     <div class="container content-wrapper">
@@ -49,19 +62,13 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12"><h2>Basic Info - edit</h2></div>
-                                <div class="col-xs-12">
-                                    <form class="form-horizontal" role="form">
-                                        <div class="form-group">
-                                            <label for="inputName" class="col-lg-2 control-label">Name</label>
-                                            <div class="col-lg-10">
-                                                <input type="name" class="form-control" id="inputName" placeholder="Name">
-                                            </div>
-                                        </div>
+                                <form class="form-horizontal" role="form" method="post">
+                                    <div class="col-xs-12"><h2>Basic Info</h2></div>
+                                    <div class="col-xs-12">
                                         <div class="form-group">
                                             <label for="inputMessage" class="col-lg-2 control-label">Description</label>
                                             <div class="col-lg-10">
-                                                <textarea rows="5" name="message" id="message" class="form-control"></textarea>
+                                                <textarea rows="5" name="description" id="description" class="form-control"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -76,7 +83,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-xs-8">
-                                                        <input type="text" placeholder="" class="form-control">
+                                                        <input type="text" placeholder="" class="form-control" name="email">
                                                     </div>
                                                 </div>
                                                 <div class="row com-dropdown">
@@ -88,7 +95,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-xs-8">
-                                                        <input type="text" placeholder="" class="form-control">
+                                                        <input type="text" placeholder="" class="form-control" name="phone">
                                                     </div>
                                                 </div>
                                                 <div class="row com-dropdown">
@@ -100,17 +107,17 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-xs-8">
-                                                        <input type="text" placeholder="" class="form-control">
+                                                        <input type="text" placeholder="" class="form-control" name="social">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                                <div class="col-xs-12 col-md-10 col-md-offset-2">
-                                    <button type="submit" class="btn btn-success">Save</button>
-                                    <button type="submit" class="btn btn-default">Cancel</button>
-                                </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-10 col-md-offset-2">
+                                        <input type="submit" class="btn btn-success" value="save">
+                                        <a href="index.php" class="btn btn-default">Cancel</a>
+                                    </div>
+                                </form>
                             </div>
                           </div>
                         </div><!--/row-->
