@@ -1,8 +1,6 @@
 <?php
     require("../config/class.php");
     $current_page = 'root'; 
-
-    var_dump($opr);
 ?>
 
 <!DOCTYPE html>

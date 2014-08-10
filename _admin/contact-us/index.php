@@ -59,9 +59,16 @@
                                             <h4>logo</h4>
                                         </div>
                                         <div class="panel-body logo-wrapper">
-                                            <img src="../../images/asian-tour-logo.jpg">
+                                            <div class="img-replacement">
+                                                <img src="../../images/asian-tour-logo.jpg">
+                                            </div>
                                             <p>
-                                                <a href="#">change logo</a>
+                                                <a href="#" id="label-upload">change logo</a>
+                                                <span></span>
+                                                <form name="frm-upload" id="frm-upload" 
+                                                        action="../ajax/ajaximage.php" method="post" enctype="multipart/form-data">
+                                                    <input type="file" name="logo_upload" id="logo_upload" accept="image/*" />
+                                                </form>
                                             </p>
                                         </div>
                                     </div>
@@ -128,6 +135,8 @@
         <script type="text/javascript" src="../js/app.js"></script>
         <script src="../../js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="../../js/_admin.js"></script>
+        <script type="text/javascript" src="../js/upload.js"></script>
+        <script type="text/javascript" src="../js/jquery.form.js"></script>
 
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="../js/gmap1.js"></script>

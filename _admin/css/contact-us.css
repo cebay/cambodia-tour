@@ -22,3 +22,9 @@
 .com-dropdown {
   margin-bottom: 15px;
 }
+#logo_upload {
+  display: none;
+}
+#label-upload ~ span {
+  display: block;
+}
