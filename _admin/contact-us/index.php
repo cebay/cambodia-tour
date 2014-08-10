@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" href="../../css/main.css">
         <link rel="stylesheet" type="text/css" href="../../css/_admin.css">
+        <link rel="stylesheet" type="text/css" href="../css/contact-us.css">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -92,7 +93,15 @@
                                             </a>
                                         </div>
                                         <div class="panel-body">
-                                            
+                                            <div id="mapCanvas"></div>
+                                              <div id="infoPanel">
+                                                <b>Marker status:</b>
+                                                <div id="markerStatus"><i>Click and drag the marker.</i></div>
+                                                <b>Current position:</b>
+                                                <div id="info"></div>
+                                                <b>Closest matching address:</b>
+                                                <div id="address"></div>
+                                              </div>
                                         </div>
                                     </div>
                                   </div>
@@ -112,6 +121,9 @@
         <script type="text/javascript" src="../js/app.js"></script>
         <script src="../../js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="../../js/_admin.js"></script>
+
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="../js/gmap.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
