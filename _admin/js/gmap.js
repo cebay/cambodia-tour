@@ -1,4 +1,5 @@
 var geocoder = new google.maps.Geocoder();
+var isDrag = false;
 
 function geocodePosition(pos) {
   geocoder.geocode({
@@ -10,6 +11,11 @@ function geocodePosition(pos) {
       updateMarkerAddress('Cannot determine address at this location.');
     }
   });
+
+  if (isDrag) {
+    $("a[disabled]").removeAttr("disabled");
+    document.getElementById('info').style.color = 'red';
+  }
 }
 
 function updateMarkerStatus(str) {
@@ -56,6 +62,7 @@ function initialize() {
   });
   
   google.maps.event.addListener(marker, 'dragend', function() {
+    isDrag = true;
     updateMarkerStatus('Drag ended');
     geocodePosition(marker.getPosition());
   });

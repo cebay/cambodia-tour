@@ -115,6 +115,9 @@
                                                 <div id="info"></div>
                                                 <b>Closest matching address:</b>
                                                 <div id="address"></div>
+                                                <div>
+                                                    <a href="#" class="btn btn-success" type="submit" disabled>Save</a>
+                                                </div>
                                               </div>
                                         </div>
                                     </div>
