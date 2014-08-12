@@ -1,3 +1,16 @@
+<?php
+    if ($_POST) {
+        include("../../config/class.php");
+        $opr->contact->lat = $_POST['lat'];
+        $opr->contact->lng = $_POST['lng'];
+        $opr->contact->user_id = 1;
+
+        $is_updated = false;
+        if ($opr->contact->update()) {
+            $is_updated = true;
+        }
+    }
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -29,6 +42,14 @@
         <div class="container-full-width">
             <div class="container">
                 <?php
+                    if ($is_updated) {
+                        echo '<div class="alert alert-success" role="alert" style="margin-top: 20px;">
+                                <button type="button" class="close" data-dismiss="alert">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>Map has been updated!
+                            </div>';
+                    }
                     if ($_GET['flash'] == 1) {
                         echo '<div class="alert alert-success" role="alert" style="margin-top: 20px;">
                                 <button type="button" class="close" data-dismiss="alert">
@@ -116,7 +137,11 @@
                                                 <b>Closest matching address:</b>
                                                 <div id="address"></div>
                                                 <div>
-                                                    <a href="#" class="btn btn-success" type="submit" disabled>Save</a>
+                                                    <form method="post">
+                                                        <input type="hidden" name="lat" id="lat">
+                                                        <input type="hidden" name="lng" id="lng">
+                                                        <input type="submit" value="save" class="btn btn-success" disabled>
+                                                    </form>
                                                 </div>
                                               </div>
                                         </div>

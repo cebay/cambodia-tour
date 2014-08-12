@@ -13,8 +13,11 @@ function geocodePosition(pos) {
   });
 
   if (isDrag) {
-    $("a[disabled]").removeAttr("disabled");
+    $("input[disabled]").removeAttr("disabled");
     document.getElementById('info').style.color = 'red';
+
+    document.getElementById('lat').value = pos.lat();
+    document.getElementById('lng').value = pos.lng();
   }
 }
 
