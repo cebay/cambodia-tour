@@ -23,7 +23,14 @@
 	define("USER_SQL_UPDATE","");
 	define("USER_SQL_DELETE","");
 
-	define("GALLERY_SQL_INSERT","");
+	define("GALLERY_SQL_INSERT",
+			"INSERT INTO " . TBL_GALLERY . "(
+				`gal_id`, 
+				`gal_title`, 
+				`gal_image`, 
+				`gal_status`, 
+				`user_id`) VALUES ('', '%s', '%s', '%u', '%u')");
+
 	define("GALLERY_SQL_UPDATE","");
 	define("GALLERY_SQL_DELETE","");
 

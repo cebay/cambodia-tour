@@ -37,7 +37,11 @@
   height: 157px;
   border-radius: 4px;
 }
-.plus-wrapper p {
+.plus-wrapper a {
   text-align: center;
   margin-top: 66px;
+  display: block;
+}
+.gal_status {
+	margin-top: 11px;
 }
