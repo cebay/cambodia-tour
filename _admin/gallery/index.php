@@ -1,12 +1,14 @@
 <?php
-    if ($_POST) {
-      include("../../config/class.php");
-      $opr->gallery->gal_title  = $_POST['gal_title'];
-      $opr->gallery->gal_image  = $_POST['gal_image'];
-      $opr->gallery->gal_status = $_POST['gal_status'];
-      $opr->gallery->user_id    = 1;
+    if ($_GET['action'] == 'delete') {
+      require("../../config/class.php");
+      $opr->gallery->gal_id   = $_GET['gal_id'];
 
-      $opr->gallery->save();
+      if (!$opr->gallery->delete()) {
+        echo "Delete fail!";
+      } else {
+        header("location: index.php?flash=1"); 
+        exit();
+      }
     }
 ?>
 <!DOCTYPE html>
@@ -66,9 +68,9 @@
                                     <div class="panel-delete">
                                       <h3>title 1</h3>
                                       <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                      <a href="?action=delete&gal_id=11" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
                                         <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
+                                      </a>
                                     </div>
                                     <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
                                   </div>

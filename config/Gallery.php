@@ -1,5 +1,9 @@
 <?php
 	class Gallery {
+		function gal_id ($gal_id) {
+			return $gal_id;
+		}
+
 		function gal_title ($gal_title) {
 			return $gal_title;
 		}
@@ -36,7 +40,9 @@
 
 		}
 		function delete() {
-
+			$gal_id = $this->gal_id;
+			$stmt = sprintf(GALLERY_SQL_DELETE, $gal_id);
+			return mysql_query($stmt);
 		}
 		// [x] basic info
 		// save map, logo

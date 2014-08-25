@@ -32,7 +32,7 @@
 				`user_id`) VALUES ('', '%s', '%s', '%u', '%u')");
 
 	define("GALLERY_SQL_UPDATE","");
-	define("GALLERY_SQL_DELETE","");
+	define("GALLERY_SQL_DELETE", "DELETE FROM " . TBL_GALLERY . " WHERE gal_id=%u");
 
 	define("TOUR_SQL_INSERT","");
 	define("TOUR_SQL_UPDATE","");
