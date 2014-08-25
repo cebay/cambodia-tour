@@ -71,6 +71,9 @@
                                       <a href="?action=delete&gal_id=11" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
                                         <span class="glyphicon glyphicon-trash"></span>
                                       </a>
+                                      <a href="upsert.php?action=edit&gal_id=11" role="button" class="btn btn-default btn-xs btn-del">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                      </a>
                                     </div>
                                     <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
                                   </div>

@@ -11,11 +11,6 @@
 			$conn = new Connection;
 		}
 
-		function msg() {
-			echo "some";
-			exit(0);
-		}
-
 		function upload_file($file, $path) {
 
 			$allowedExts = array("gif", "jpeg", "jpg", "png");
@@ -48,6 +43,15 @@
 			  echo "Invalid file";
 			}
 			return $is_uploaded;
+		}
+
+		function find_record($field, $table, $condition) {
+			$stmt	 = sprintf(FIND_RECORD, $field, $table, $condition);
+			echo "=> " . $stmt; exit(0);
+			$query 	 = mysql_query($stmt);
+			$records = mysql_fetch_array($query);
+
+			return $records[0];
 		}
 	}
 

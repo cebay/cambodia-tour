@@ -41,4 +41,6 @@
 	define("ABOUTUS_SQL_INSERT","");
 	define("ABOUTUS_SQL_UPDATE","");
 	define("ABOUTUS_SQL_DELETE","");
+
+	define("FIND_RECORD", "SELECT %s FROM %s WHERE %s");
 ?>

@@ -18,6 +18,12 @@
             }
         }
 
+    } else if ( $_GET["action"] == "edit") {
+        $field = "*";
+        $table = TBL_GALLERY;
+        $condition = sprintf("gal_id=%u", $_GET["gal_id"]);
+
+        $gallery = $opr->find_record($field, $table, $condition);
     }
 ?>
 
