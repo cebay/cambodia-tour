@@ -2,13 +2,27 @@
     require("../../config/class.php");
 
     if ($_POST) {
-        
-        $is_uploaded = $opr->upload_file($_FILES["gal_image"], "../../images/galleries/");
-        if($is_uploaded) {
-            $opr->gallery->gal_title   = $_POST['gal_title'];
-            $opr->gallery->gal_image   = $_FILES["gal_image"]["name"];
-            $opr->gallery->gal_status  = (($_POST['gal_status']) == 'on' ? 1 : 0);
-            $opr->gallery->user_id     = 1;
+
+        $opr->gallery->gal_title   = $_POST['gal_title'];
+        $opr->gallery->gal_image   = $_FILES["gal_image"]["name"];
+        $opr->gallery->gal_status  = (($_POST['gal_status']) == 'on' ? 1 : 0);
+        $opr->gallery->user_id     = 1;
+
+        if($_POST['gal_edit']) {
+            echo '=> ' . $_POST["gal_image_hidden"]; exit(0);
+
+            if($_POST["gal_image_hidden"] && !$_FILES["gal_image"]) {
+                $opr->gallery->gal_image = $_POST["gal_image_hidden"];
+            }
+
+            if (!$opr->gallery->update()) {
+                echo "Cannot update gallery!";
+            } else {
+                header("location: index.php?flash=1"); 
+                exit();
+            }
+        } else {
+            $is_uploaded = $opr->upload_file($_FILES["gal_image"], "../../images/galleries/");
 
             if (!$opr->gallery->save()) {
                 echo "Cannot save gallery!";
@@ -24,6 +38,7 @@
         $condition = sprintf("gal_id=%u", $_GET["gal_id"]);
 
         $gallery = $opr->find_record($field, $table, $condition);
+
     }
 ?>
 
@@ -82,23 +97,25 @@
                                     <div class="col-xs-12">
                                         <h2>Gallery</h2>
                                     </div>
+                                    <input type="text" value="<?php echo $gallery['gal_id'] ?>" name="gal_edit">
                                     <div class="col-xs-12">
                                         <div class="form-group">
                                             <label for="inputMessage" class="col-lg-2 control-label">Title: </label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="" class="form-control" name="gal_title">
+                                                <input type="text" class="form-control" name="gal_title" value="<?php echo $gallery['gal_title'] ?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="inputMessage" class="col-lg-2 control-label">Image: </label>
                                             <div class="col-lg-10">
-                                                <input type="file" placeholder="" name="gal_image">
+                                                <input type="text" name="gal_image_hidden" value="<?php echo $gallery['gal_image'] ?>" >
+                                                <input type="file" name="gal_image">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="inputMessage" class="col-lg-2 control-label">Status: </label>
                                             <div class="col-lg-10">
-                                                <input type="checkbox" placeholder="" name="gal_status" class="gal_status">
+                                                <input type="checkbox" placeholder="" name="gal_status" class="gal_status" <?php echo (( $gallery['gal_status'] == 1 ) ? 'checked' : '' ) ?> >
                                             </div>
                                         </div>
                                     </div>

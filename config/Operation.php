@@ -47,11 +47,10 @@
 
 		function find_record($field, $table, $condition) {
 			$stmt	 = sprintf(FIND_RECORD, $field, $table, $condition);
-			echo "=> " . $stmt; exit(0);
 			$query 	 = mysql_query($stmt);
-			$records = mysql_fetch_array($query);
+			$record = mysql_fetch_assoc($query);
 
-			return $records[0];
+			return $record;
 		}
 	}
 

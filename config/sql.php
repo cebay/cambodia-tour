@@ -31,7 +31,13 @@
 				`gal_status`, 
 				`user_id`) VALUES ('', '%s', '%s', '%u', '%u')");
 
-	define("GALLERY_SQL_UPDATE","");
+	define("GALLERY_SQL_UPDATE", 
+			"UPDATE " . TBL_GALLERY . " SET 
+				`gal_title`  = %s,
+				`gal_image`  = %s,
+				`gal_status` = %u
+				 WHERE `user_id`= %u");
+
 	define("GALLERY_SQL_DELETE", "DELETE FROM " . TBL_GALLERY . " WHERE gal_id=%u");
 
 	define("TOUR_SQL_INSERT","");
