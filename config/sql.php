@@ -33,8 +33,8 @@
 
 	define("GALLERY_SQL_UPDATE", 
 			"UPDATE " . TBL_GALLERY . " SET 
-				`gal_title`  = %s,
-				`gal_image`  = %s,
+				`gal_title`  = '%s',
+				`gal_image`  = '%s',
 				`gal_status` = %u
 				 WHERE `user_id`= %u");
 

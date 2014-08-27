@@ -9,9 +9,9 @@
         $opr->gallery->user_id     = 1;
 
         if($_POST['gal_edit']) {
-            echo '=> ' . $_POST["gal_image_hidden"]; exit(0);
+            //echo '=> ' . $_POST["gal_image_hidden"]; exit(0);
 
-            if($_POST["gal_image_hidden"] && !$_FILES["gal_image"]) {
+            if($_POST["gal_image_hidden"] != '' && $_FILES["gal_image"]["name"] == '') {
                 $opr->gallery->gal_image = $_POST["gal_image_hidden"];
             }
 
