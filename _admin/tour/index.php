@@ -42,8 +42,11 @@
                           <div class="col-md-9">
                             <div class="row">
                                 <div class="col-xs-12 add-new">
-                                    <a href="upsert.php" role="button" class="btn btn-success pull-right">
-                                      <span class="glyphicon glyphicon-plus"></span> Add New
+                                    <a href="slide.php" role="button" class="btn btn-success pull-right">
+                                      <span class="glyphicon glyphicon-plus"></span> Add New slide
+                                    </a>
+                                    <a href="info.php" role="button" class="btn btn-success pull-right">
+                                      <span class="glyphicon glyphicon-plus"></span> Add New info
                                     </a>
                                 </div>
                             </div>

@@ -69,36 +69,6 @@
                                     <img src="../../images/tour-destination/tour-slide.jpg" class="img-responsive">
                                 </div>
                                 <div class="col-xs-12">
-                                    <hr>
-                                    <h2>Tour Info</h2>
-                                </div>
-                                <div class="col-xs-12 col-sm-7">
-                                    <form class="form-horizontal" role="form">
-                                        <div class="form-group">
-                                            <label for="inputName" class="col-lg-2 control-label">Name</label>
-                                            <div class="col-lg-10">
-                                                <input type="name" class="form-control" id="inputName" placeholder="Name">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputMessage" class="col-lg-2 control-label">Description</label>
-                                            <div class="col-lg-10">
-                                                <textarea rows="5" name="message" id="message" class="form-control"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputEmail1" class="col-lg-2 control-label"></label>
-                                            <div class="col-lg-10">
-                                                <label><input type="checkbox"> publish</label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-xs-12 col-sm-5">
-                                    <img src="../../images/tour-destination/tour-slide.jpg">
-                                </div>
-                                <hr>
-                                <div class="col-xs-12">
                                     <button type="submit" class="btn btn-success">Save</button>
                                     <button type="submit" class="btn btn-default">Cancel</button>
                                 </div>
