@@ -58,7 +58,7 @@
                                             </p>
                                             <form name="frm-upload" id="frm-upload" 
                                                     action="../ajax/ajaximage.php" method="post" enctype="multipart/form-data">
-                                                <input type="file" name="logo_upload" id="logo_upload" accept="image/*" />
+                                                <input class="hidden" type="file" name="logo_upload" id="logo_upload" accept="image/*" />
                                             </form>
                                         </div>
                                         <div class="img-upload prepare-img img-wrapper">
