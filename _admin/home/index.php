@@ -50,12 +50,19 @@
                                     <h5>home slideshow</h5>
                                 </div>
                                 <div class="panel-body">
-                                    <div class="col-xs-12 col-sm-4">
-                                        <img src="../../images/tour-destination/tour-slide.jpg" class="img-responsive">
-                                    </div>
+                                    
                                     <div class="col-xs-12 col-sm-8">
                                         <div class="img-upload upload-img">
-                                            <span class="glyphicon glyphicon-plus"></span> Upload Image
+                                            <p id="label-upload">
+                                                <span class="glyphicon glyphicon-plus"></span> Upload Image
+                                            </p>
+                                            <form name="frm-upload" id="frm-upload" 
+                                                    action="../ajax/ajaximage.php" method="post" enctype="multipart/form-data">
+                                                <input type="file" name="logo_upload" id="logo_upload" accept="image/*" />
+                                            </form>
+                                        </div>
+                                        <div class="img-upload prepare-img img-wrapper">
+                                            <div class="img-replacement"></div>
                                         </div>
                                         <div class="img-upload prepare-img img-wrapper">
                                             <div class="panel-delete">
@@ -258,6 +265,9 @@
         <script type="text/javascript" src="../js/app.js"></script>
         <script src="../../js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="../../js/_admin.js"></script>
+
+        <script type="text/javascript" src="../js/upload.js"></script>
+        <script type="text/javascript" src="../js/jquery.form.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
