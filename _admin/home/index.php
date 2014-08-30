@@ -92,48 +92,13 @@
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading title-bar">
-                                    <h5>Short Desc.</h5>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="col-xs-12 col-sm-4">
-                                        <img src="../../images/tour-destination/tour-slide.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-8">
-
-                                        <div class="img-upload upload-img">
-                                            <span class="glyphicon glyphicon-plus"></span> Upload Image
-                                        </div>
-                                        <div class="img-upload prepare-img img-wrapper">
-                                            <div class="panel-delete">
-                                                <h3>title 1</h3>
-                                                <button type="button" class="btn btn-default btn-xs">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="img-upload prepare-img img-wrapper">
-                                            <div class="panel-delete">
-                                                <h3>title 1</h3>
-                                                <button type="button" class="btn btn-default btn-xs">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="img-upload prepare-img img-wrapper">
-                                            <div class="panel-delete">
-                                                <h3>title 1</h3>
-                                                <button type="button" class="btn btn-default btn-xs">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                              <div class="panel-heading title-bar">
+                                <h5>Short Desc.</h5>
+                              </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
-                                    <h5>blog</h5>
+                                    <h5>Blog</h5>
                                 </div>
                                 <div class="panel-body">
                                   <div class="blog-post">
@@ -145,7 +110,90 @@
                                         <span class="glyphicon glyphicon-trash"></span>
                                       </button>
                                     </p>
-                                    <h3>Title</h3>
+                                    <div class="media">
+                                      <a class="pull-left" href="#">
+                                        <img class="media-object" src="../../images/medias/yoi.png" alt="...">
+                                      </a>
+                                      <div class="media-body">
+                                        <h4 class="media-heading">Title</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="blog-post">
+                                    <p class="blog-opr">
+                                      <button class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                      </button>
+                                      <button class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-trash"></span>
+                                      </button>
+                                    </p>
+                                    <div class="media">
+                                      <a class="pull-left" href="#">
+                                        <img class="media-object" src="../../images/medias/yoi.png" alt="...">
+                                      </a>
+                                      <div class="media-body">
+                                        <h4 class="media-heading">Title</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="blog-post">
+                                    <p class="blog-opr">
+                                      <button class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                      </button>
+                                      <button class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-trash"></span>
+                                      </button>
+                                    </p>
+                                    <div class="media">
+                                      <a class="pull-left" href="#">
+                                        <img class="media-object" src="../../images/medias/yoi.png" alt="...">
+                                      </a>
+                                      <div class="media-body">
+                                        <h4 class="media-heading">Title</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading title-bar">
+                                    <h5>News</h5>
+                                </div>
+                                <div class="panel-body">
+                                    
+                                  <div class="blog-post">
+                                    <p class="blog-opr">
+                                      <button class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                      </button>
+                                      <button class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-trash"></span>
+                                      </button>
+                                    </p>
+                                    <h3>News 1</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -163,66 +211,15 @@
                                         <span class="glyphicon glyphicon-trash"></span>
                                       </button>
                                     </p>
-                                    <h3>Title</h3>
-                                    <p>Lorem ure dolor in reprehenderit in voluptate velit esse
+                                    <h3>New 2</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                     </p>
                                   </div>
-                                  <div class="blog-post">
-                                    <p class="blog-opr">
-                                      <button class="btn btn-default btn-xs">
-                                        <span class="glyphicon glyphicon-pencil"></span>
-                                      </button>
-                                      <button class="btn btn-default btn-xs">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </p>
-                                    <h3>Title</h3>
-                                    <p>Lorem ipsum dolor a pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading title-bar">
-                                    <h5>News</h5>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="col-xs-12 col-sm-4">
-                                        <img src="../../images/tour-destination/tour-slide.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-8">
-
-                                        <div class="img-upload upload-img">
-                                            <span class="glyphicon glyphicon-plus"></span> Upload Image
-                                        </div>
-                                        <div class="img-upload prepare-img img-wrapper">
-                                            <div class="panel-delete">
-                                                <h3>title 1</h3>
-                                                <button type="button" class="btn btn-default btn-xs">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="img-upload prepare-img img-wrapper">
-                                            <div class="panel-delete">
-                                                <h3>title 1</h3>
-                                                <button type="button" class="btn btn-default btn-xs">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="img-upload prepare-img img-wrapper">
-                                            <div class="panel-delete">
-                                                <h3>title 1</h3>
-                                                <button type="button" class="btn btn-default btn-xs">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
