@@ -32,13 +32,14 @@
 			return mysql_query($stmt);
 		}
 		function update() {
+			$abo_id			= $this->abo_id;
 			$abo_title	= $this->abo_title;
 			$abo_desc		= $this->abo_desc;
 			$abo_image	= $this->abo_image;
 			$abo_status = $this->abo_status;
 			$user_id 		= $this->user_id;
 
-			$stmt 	 = sprintf(ABOUTUS_SQL_UPDATE, $abo_title, $abo_desc, $abo_image, $abo_status, $user_id);
+			$stmt 	 = sprintf(ABOUTUS_SQL_UPDATE, $abo_title, $abo_desc, $abo_image, $abo_status, $abo_id);
 			return mysql_query($stmt);
 		}
 		function upsert() {

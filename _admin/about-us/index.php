@@ -1,3 +1,12 @@
+<?php
+    require("../../config/class.php");
+    if( $_GET['action']=="delete") {
+        $opr->about->abo_id = $_GET['abo_id'];
+        if($opr->about->delete()) {
+
+        }
+    }
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -51,10 +60,10 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h4>radin</h4>
-                                    <a href="?action=delete&abo_id=1" role="button" class="btn btn-default btn-xs btn-del pull-right" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                    <a href="?action=delete&abo_id=2" role="button" class="btn btn-default btn-xs btn-del pull-right" onclick="return confirm('Are you sure? Do you want to delete this record?');">
                                         <span class="glyphicon glyphicon-trash"></span>
                                     </a>
-                                    <a href="upsert.php?action=edit&abo_id=1" role="button" class="btn btn-default btn-xs btn-del pull-right">
+                                    <a href="upsert.php?action=edit&abo_id=2" role="button" class="btn btn-default btn-xs btn-del pull-right">
                                         <span class="glyphicon glyphicon-pencil"></span>
                                     </a>
                                 </div>

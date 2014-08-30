@@ -7,9 +7,9 @@
         $opr->about->abo_desc    = $_POST['abo_desc'];
         $opr->about->abo_image   = $_FILES["abo_image"]["name"];
         $opr->about->abo_status  = (($_POST['abo_status']) == 'on' ? 1 : 0);
-        $opr->about->user_id     = 1;
+        $opr->about->abo_id      = 2;
 
-        if($_POST['gal_edit']) {
+        if($_POST['abo_edit']) {
             //echo '=> ' . $_POST["abo_image_hidden"]; exit(0);
 
             if($_POST["abo_image_hidden"] != '' && $_FILES["abo_image"]["name"] == '') {
@@ -99,6 +99,7 @@
                                 </div>
                                 <div class="panel-body">
                                   <form method="post" enctype="multipart/form-data">
+                                    <input type="text" value="<?php echo $about['abo_id'] ?>" name="abo_edit">
                                     <div class="row">
                                       <div class="col-xs-12 col-sm-4">
                                         <div class="thumb-about">
