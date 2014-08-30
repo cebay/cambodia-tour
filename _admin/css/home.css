@@ -15,3 +15,14 @@
 	background: #ccc;
 	border-style: solid;
 }
+.blog-post {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+.blog-opr {
+	border-bottom: 1px solid #ebebeb;
+  padding-bottom: 5px;
+}

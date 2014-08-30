@@ -114,14 +114,11 @@
                                     <h4>new1</h4>
                                 </div>
                                 <div class="panel-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                                    </p>
-                                </div>
-                                <div class="panel-footer">
-                                    <p>readmore</p>
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                  quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                                  </p>
                                 </div>
                             </div>
                         </div>
