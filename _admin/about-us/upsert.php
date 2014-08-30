@@ -1,3 +1,48 @@
+<?php
+    require("../../config/class.php");
+
+    if ($_POST) {
+
+        $opr->about->abo_title   = $_POST['abo_title'];
+        $opr->about->abo_desc    = $_POST['abo_desc'];
+        $opr->about->abo_image   = $_FILES["abo_image"]["name"];
+        $opr->about->abo_status  = (($_POST['abo_status']) == 'on' ? 1 : 0);
+        $opr->about->user_id     = 1;
+
+        if($_POST['gal_edit']) {
+            //echo '=> ' . $_POST["abo_image_hidden"]; exit(0);
+
+            if($_POST["abo_image_hidden"] != '' && $_FILES["abo_image"]["name"] == '') {
+                $opr->about->abo_image = $_POST["abo_image_hidden"];
+            }
+
+            if (!$opr->about->update()) {
+                echo "Cannot update about!";
+            } else {
+                header("location: index.php?flash=1"); 
+                exit();
+            }
+        } else {
+            $is_uploaded = $opr->upload_file($_FILES["abo_image"], "../../images/about-us/");
+
+            if (!$opr->about->save()) {
+                echo "Cannot save about!";
+            } else {
+                header("location: index.php?flash=1"); 
+                exit();
+            }
+        }
+
+    } else if ( $_GET["action"] == "edit") {
+        $field = "*";
+        $table = TBL_ABOUT_US;
+        $condition = sprintf("abo_id=%u", $_GET["abo_id"]);
+
+        $about = $opr->find_record($field, $table, $condition);
+
+    }
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -51,37 +96,41 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h4>Add new</h4>
-                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-trash pull-right"></span>
-                                    </a>
                                 </div>
                                 <div class="panel-body">
+                                  <form method="post" enctype="multipart/form-data">
                                     <div class="row">
                                       <div class="col-xs-12 col-sm-4">
                                         <div class="thumb-about">
+                                          <span class="glyphicon glyphicon-plus"></span> add photo
+                                          <input type="file" name="abo_image">
+                                          <input type="text" name="abo_image_hidden" value="<?php echo $about['abo_image'] ?>" >
                                         </div>
                                       </div>
                                       <div class="col-xs-12 col-sm-8">
                                          <div class="form-group row">
-                                         <label for="inputEmail1" class="col-lg-2 control-label">Title</label>
-                                         <div class="col-lg-10">
-                                           <input type="email" class="form-control" id="inputEmail1" placeholder="Title">
-                                         </div>
-                                         </div>
-                                         <div class="form-group row">
-                                         <label for="inputPassword1" class="col-lg-2 control-label">Description</label>
-                                         <div class="col-lg-10">
-                                           <textarea rows="5" name="message" id="message" class="form-control"></textarea>
-                                         </div>
+                                           <label for="abo_title" class="col-lg-2 control-label">Title</label>
+                                           <div class="col-lg-10">
+                                             <input type="text" class="form-control" name="abo_title" id="abo_title" placeholder="Title" value="<?php echo $about['abo_title'] ?>">
+                                           </div>
                                          </div>
                                          <div class="form-group row">
-                                         <div class="col-lg-offset-2 col-lg-10">
-                                           <button type="submit" class="btn btn-default">Sign in</button>
+                                           <label for="abo_desc" class="col-lg-2 control-label">Description</label>
+                                           <div class="col-lg-10">
+                                             <textarea rows="5" name="abo_desc" id="abo_desc" class="form-control"><?php echo $about['abo_desc'] ?></textarea>
+                                           </div>
                                          </div>
+                                         <div class="form-group row">
+                                            <input type="checkbox" name="abo_status" class="abo_status" <?php echo (( $about['abo_status'] == 1 ) ? 'checked' : '' ) ?> >
                                          </div>
-                                        </form>
+                                         <div class="form-group row">
+                                           <div class="col-lg-offset-2 col-lg-10">
+                                             <input type="submit" class="btn btn-success" value="Save">
+                                           </div>
+                                         </div>
                                       </div>
                                     </div>
+                                  </form>
                                 </div>
                             </div>
                           </div>

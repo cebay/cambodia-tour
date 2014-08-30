@@ -51,11 +51,11 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h4>radin</h4>
-                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-trash pull-right"></span>
+                                    <a href="?action=delete&abo_id=1" role="button" class="btn btn-default btn-xs btn-del pull-right" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                        <span class="glyphicon glyphicon-trash"></span>
                                     </a>
-                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                    <a href="upsert.php?action=edit&abo_id=1" role="button" class="btn btn-default btn-xs btn-del pull-right">
+                                        <span class="glyphicon glyphicon-pencil"></span>
                                     </a>
                                 </div>
                                 <div class="panel-body">

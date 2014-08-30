@@ -9,4 +9,5 @@
 	$opr = new Operation;
 	$opr->contact = new Contact;
 	$opr->gallery = new Gallery;
+	$opr->about 	= new About;
 ?>

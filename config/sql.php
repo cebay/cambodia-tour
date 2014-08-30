@@ -44,9 +44,22 @@
 	define("TOUR_SQL_UPDATE","");
 	define("TOUR_SQL_DELETE","");
 
-	define("ABOUTUS_SQL_INSERT","");
-	define("ABOUTUS_SQL_UPDATE","");
-	define("ABOUTUS_SQL_DELETE","");
+	define("ABOUTUS_SQL_INSERT",
+			"INSERT INTO " . TBL_ABOUT_US . "(
+				`abo_id`, 
+				`abo_title`, 
+				`abo_desc`, 
+				`abo_image`, 
+				`abo_status`, 
+				`user_id`) VALUES ('','%s','%s','%s','%s','%u')");
+	define("ABOUTUS_SQL_UPDATE",
+			"UPDATE " . TBL_ABOUT_US . " SET 
+			`abo_title`	='%s',
+			`abo_desc`	='%s',
+			`abo_image`	='%s',
+			`abo_status`='%s' WHERE `abo_id` = %u");
+	define("ABOUTUS_SQL_DELETE",
+			"DELETE FROM " . TBL_ABOUT_US . " WHERE `abo_id` = %u");
 
 	define("FIND_RECORD", "SELECT %s FROM %s WHERE %s");
 ?>
