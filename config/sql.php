@@ -40,8 +40,26 @@
 
 	define("GALLERY_SQL_DELETE", "DELETE FROM " . TBL_GALLERY . " WHERE gal_id=%u");
 
-	define("TOUR_SQL_INSERT","");
-	define("TOUR_SQL_UPDATE","");
+	define("TOUR_SQL_INSERT",
+			"INSERT INTO " . TBL_TOUR . "(
+				`tou_id`, 
+				`tou_image`, 
+				`tou_title`, 
+				`tou_desc`, 
+				`tou_start_date`, 
+				`tou_end_date`, 
+				`tou_location`, 
+				`tou_status`, 
+				`user_id`) VALUES ('','%s','%s','%s','%s','%s','%s',%u,%u)");
+	define("TOUR_SQL_UPDATE",
+			"UPDATE " . TBL_TOUR . " SET 
+			`tou_image`			= '%s',
+			`tou_title`			= '%s',
+			`tou_desc`			= '%s',
+			`tou_start_date`= '%s',
+			`tou_end_date`	= '%s',
+			`tou_location`	= '%s',
+			`tou_status`		=  %u WHERE `tou_id`= %u");
 	define("TOUR_SQL_DELETE","");
 
 	define("ABOUTUS_SQL_INSERT",

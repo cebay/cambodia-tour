@@ -42,9 +42,6 @@
                           <div class="col-md-9">
                             <div class="row">
                                 <div class="col-xs-12 add-new">
-                                    <a href="slide.php" role="button" class="btn btn-success pull-right">
-                                      <span class="glyphicon glyphicon-plus"></span> Add New slide
-                                    </a>
                                     <a href="info.php" role="button" class="btn btn-success pull-right">
                                       <span class="glyphicon glyphicon-plus"></span> Add New info
                                     </a>
@@ -55,11 +52,12 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading title-bar">
                                         <h4>radin</h4>
-                                        <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                          <span class="glyphicon glyphicon-trash pull-right"></span>
+                                        
+                                        <a href="?action=delete&tou_id=1" role="button" class="btn btn-default btn-xs btn-del pull-right" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                            <span class="glyphicon glyphicon-trash"></span>
                                         </a>
-                                        <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                          <span class="glyphicon glyphicon-pencil pull-right"></span>
+                                        <a href="info.php?action=edit&tou_id=1" role="button" class="btn btn-default btn-xs btn-del pull-right">
+                                            <span class="glyphicon glyphicon-pencil"></span>
                                         </a>
                                     </div>
                                     <div class="panel-body">

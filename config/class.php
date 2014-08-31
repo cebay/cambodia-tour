@@ -10,4 +10,5 @@
 	$opr->contact = new Contact;
 	$opr->gallery = new Gallery;
 	$opr->about 	= new About;
+	$opr->tour 		= new Tour;
 ?>

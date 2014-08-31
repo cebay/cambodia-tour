@@ -1,3 +1,53 @@
+<?php
+    require("../../config/class.php");
+
+    if ($_POST) {
+
+        $opr->tour->tou_title       = $_POST['tou_title'];
+        $opr->tour->tou_desc        = $_POST['tou_desc'];
+
+        $opr->tour->tou_start_date  = $_POST['tou_start_date'];
+        $opr->tour->tou_end_date    = $_POST['tou_end_date'];
+        $opr->tour->tou_location    = $_POST['tou_location'];
+
+        $opr->tour->tou_image       = $_FILES["tou_image"]["name"];
+        $opr->tour->tou_status      = (($_POST['tou_status']) == 'on' ? 1 : 0);
+        $opr->tour->tou_id          = $_GET['tou_id'];
+
+        if($_POST['tou_edit']) {
+            //echo '=> ' . $_POST["tou_image_hidden"]; exit(0);
+
+            if($_POST["tou_image_hidden"] != '' && $_FILES["tou_image"]["name"] == '') {
+                $opr->tour->tou_image = $_POST["tou_image_hidden"];
+            }
+
+            if (!$opr->tour->update()) {
+                echo "Cannot update tour!";
+            } else {
+                header("location: index.php?flash=1"); 
+                exit();
+            }
+        } else {
+            $is_uploaded = $opr->upload_file($_FILES["tou_image"], "../../images/tour-destination/");
+
+            if (!$opr->tour->save()) {
+                echo "Cannot save tour!";
+            } else {
+                header("location: index.php?flash=1"); 
+                exit();
+            }
+        }
+
+    } else if ( $_GET["action"] == "edit") {
+        $field = "*";
+        $table = TBL_TOUR;
+        $condition = sprintf("tou_id=%u", $_GET["tou_id"]);
+
+        $tour = $opr->find_record($field, $table, $condition);
+
+    }
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -51,44 +101,63 @@
                                 <div class="col-xs-12">
                                     <h2>Tour Info</h2>
                                 </div>
-                                <div class="col-xs-12 col-sm-7">
-                                    <form class="form-horizontal" role="form">
+                                <form class="form-horizontal" role="form" enctype="multipart/form-data" method="post">
+                                    <div class="col-xs-12 col-sm-7">
+                                        <input type="text" value="<?php echo $tour['tou_id'] ?>" name="tou_edit">
                                         <div class="form-group">
-                                            <label for="inputName" class="col-lg-2 control-label">Name</label>
+                                            <label for="tou_title" class="col-lg-2 control-label">Title</label>
                                             <div class="col-lg-10">
-                                                <input type="name" class="form-control" id="inputName" placeholder="Name">
+                                                <input type="text" class="form-control" id="tou_title" name="tou_title" placeholder="title" value="<?php echo $tour['tou_title']?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputMessage" class="col-lg-2 control-label">Description</label>
+                                            <label for="tou_desc" class="col-lg-2 control-label">Description</label>
                                             <div class="col-lg-10">
-                                                <textarea rows="5" name="message" id="message" class="form-control"></textarea>
+                                                <textarea rows="5" name="tou_desc" id="tou_desc" class="form-control"><?php echo $tour['tou_desc']?></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputEmail1" class="col-lg-2 control-label"></label>
+                                            <label for="tou_start_date" class="col-lg-2 control-label">Start Date</label>
                                             <div class="col-lg-10">
-                                                <label><input type="checkbox"> publish</label>
+                                                <input type="text" class="form-control" id="tou_start_date" name="tou_start_date" placeholder="Start Date" value="<?php echo $tour['tou_start_date']?>">
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                                <div class="col-xs-12 col-sm-5">
-                                    <img src="../../images/tour-destination/tour-slide.jpg">
-                                </div>
-                                <hr>
-                                <div class="col-xs-12">
-                                    <button type="submit" class="btn btn-success">Save</button>
-                                    <button type="submit" class="btn btn-default">Cancel</button>
-                                </div>
+                                        <div class="form-group">
+                                            <label for="tou_end_date" class="col-lg-2 control-label">End Date</label>
+                                            <div class="col-lg-10">
+                                                <input type="text" class="form-control" id="tou_end_date" name="tou_end_date" placeholder="End Date" value="<?php echo $tour['tou_end_date']?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tou_location" class="col-lg-2 control-label">Location</label>
+                                            <div class="col-lg-10">
+                                                <input type="text" class="form-control" id="tou_location" name="tou_location" placeholder="Location" value="<?php echo $tour['tou_location']?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tou_status" class="col-lg-2 control-label"></label>
+                                            <div class="col-lg-10">
+                                                <label><input type="checkbox" name="tou_status" <?php echo (( $tour['tou_status'] == 1 ) ? 'checked' : '' ) ?> > publish</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-5">
+                                        <input type="file" name="tou_image">
+                                        <input type="text" name="tou_image_hidden" value="<?php echo $tour['tou_image'] ?>" >
+                                    </div>
+                                    <hr>
+                                    <div class="col-xs-12">
+                                        <input type="submit" class="btn btn-success" value="Save">
+                                        <button type="submit" class="btn btn-default">Cancel</button>
+                                    </div>
+                                </form>
                             </div>
-                          </div>
-                        </div><!--/row-->
-                    </div><!--/container-->
+                          </div><!--/row-->
+                        </div><!--/container-->
+                    </div>
                 </div>
             </div>
         </div>
-
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
         <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="../../js/plugins.js"></script>
