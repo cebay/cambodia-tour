@@ -2,9 +2,13 @@
     require("../../config/class.php");
 
     if( $_GET['action']=="delete") {
-        $opr->homeNews->news_id = $_GET['news_id'];
-        if($opr->homeNews->delete()) {
+        if($_GET['slide_id']) {
+            $opr->homeSlide->slide_id = $_GET['slide_id'];
+            $opr->homeSlide->delete();
+        } else {
 
+            $opr->homeNews->news_id = $_GET['news_id'];
+            $opr->homeNews->delete();
         }
     }
 ?>
@@ -61,12 +65,9 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="blog-post">
-                                        <div class="img-upload upload-img">
-                                            <a class="glyphicon glyphicon-plus" href="#">Add image slide</a>
-                                        </div>
                                         <div class="img-upload slide-image">
                                             <img src="../../images/slides/6.jpg">
-                                            <a href="?action=delete&slide_id=1" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                            <a href="?action=delete&slide_id=3" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
                                                 <span class="glyphicon glyphicon-trash"></span>
                                             </a>
                                         </div>

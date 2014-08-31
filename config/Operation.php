@@ -7,6 +7,7 @@
 		public $about;
 		public $tour;
 		public $homeNews;
+		public $homeSlide;
 
 		function __construct() {
 			$conn = new Connection;

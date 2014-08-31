@@ -7,9 +7,10 @@
 		include $class_name . '.php';
 	}
 	$opr = new Operation;
-	$opr->contact = new Contact;
-	$opr->gallery = new Gallery;
-	$opr->about 	= new About;
-	$opr->tour 		= new Tour;
-	$opr->homeNews= new HomeNews;
+	$opr->contact 	= new Contact;
+	$opr->gallery 	= new Gallery;
+	$opr->about 		= new About;
+	$opr->tour 			= new Tour;
+	$opr->HomeNews	= new HomeNews;
+	$opr->homeSlide = new HomeSlide;
 ?>

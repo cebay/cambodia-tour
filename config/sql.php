@@ -92,5 +92,10 @@
 	define("HOME_NEWS_SQL_DELETE",
 			"DELETE FROM " . TBL_HOME_NEWS . " WHERE news_id = %u");
 
+	define("HOME_SLIDE_SQL_INSERT",
+			"INSERT INTO " . TBL_HOME_SLIDE . "(`slide_id`, `slide_image`) VALUES ('','%s')");
+	define("HOME_SLIDE_SQL_DELETE",
+			"DELETE FROM " . TBL_HOME_SLIDE . " WHERE `slide_id`= %u");
+
 	define("FIND_RECORD", "SELECT %s FROM %s WHERE %s");
 ?>

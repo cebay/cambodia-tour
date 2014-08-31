@@ -11,4 +11,5 @@
 	define('TBL_CONTACT_US'	,'tbl_contact_us');
 	define('TBL_GALLERY'	,'tbl_gallery');
 	define('TBL_HOME_NEWS'	,'tbl_home_news');
+	define('TBL_HOME_SLIDE'	,'tbl_home_slide');
 ?>
