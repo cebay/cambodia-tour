@@ -80,5 +80,17 @@
 	define("ABOUTUS_SQL_DELETE",
 			"DELETE FROM " . TBL_ABOUT_US . " WHERE `abo_id` = %u");
 
+	define("HOME_NEWS_SQL_INSERT",
+			"INSERT INTO " . TBL_HOME_NEWS . "(
+				`news_id`, 
+				`news_title`, 
+				`news_desc`) VALUES ('','%s','%s')");
+	define("HOME_NEWS_SQL_UPDATE",
+			"UPDATE " . TBL_HOME_NEWS . " SET 
+			`news_title`= '%s',
+			`news_desc`	= '%s' WHERE `news_id`=%u");
+	define("HOME_NEWS_SQL_DELETE",
+			"DELETE FROM " . TBL_HOME_NEWS . " WHERE news_id = %u");
+
 	define("FIND_RECORD", "SELECT %s FROM %s WHERE %s");
 ?>

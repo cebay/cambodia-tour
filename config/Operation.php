@@ -6,6 +6,7 @@
 		public $gallery;
 		public $about;
 		public $tour;
+		public $homeNews;
 
 		function __construct() {
 			$conn = new Connection;

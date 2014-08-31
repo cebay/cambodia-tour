@@ -11,4 +11,5 @@
 	$opr->gallery = new Gallery;
 	$opr->about 	= new About;
 	$opr->tour 		= new Tour;
+	$opr->homeNews= new HomeNews;
 ?>

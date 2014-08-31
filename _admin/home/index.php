@@ -1,5 +1,12 @@
 <?php
     require("../../config/class.php");
+
+    if( $_GET['action']=="delete") {
+        $opr->homeNews->news_id = $_GET['news_id'];
+        if($opr->homeNews->delete()) {
+
+        }
+    }
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -49,17 +56,21 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
                                     <h5>News</h5>
+                                    <a href="news.php" role="button" class="btn btn-success pull-right">
+                                      <span class="glyphicon glyphicon-plus"></span> Add News
+                                    </a>
                                 </div>
                                 <div class="panel-body">
                                     
                                   <div class="blog-post">
                                     <p class="blog-opr">
-                                      <button class="btn btn-default btn-xs">
-                                        <span class="glyphicon glyphicon-pencil"></span>
-                                      </button>
-                                      <button class="btn btn-default btn-xs">
+                                      
+                                      <a href="?action=delete&news_id=1" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
                                         <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
+                                    </a>
+                                    <a href="news.php?action=edit&news_id=1" role="button" class="btn btn-default btn-xs btn-del">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                    </a>
                                     </p>
                                     <h3>News 1</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
