@@ -52,16 +52,14 @@
                           
                           <!--right-->
                           <div class="col-md-9">
-                            
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
-                                    <h5>News</h5>
-                                    <a href="news.php" role="button" class="btn btn-success pull-right">
-                                      <span class="glyphicon glyphicon-plus"></span> Add News
+                                    <h5>Slide Images</h5>
+                                    <a href="slide.php" role="button" class="btn btn-success pull-right">
+                                      <span class="glyphicon glyphicon-plus"></span> Add image slide
                                     </a>
                                 </div>
                                 <div class="panel-body">
-
                                     <div class="blog-post">
                                         <div class="img-upload upload-img">
                                             <a class="glyphicon glyphicon-plus" href="#">Add image slide</a>
@@ -72,14 +70,31 @@
                                                 <span class="glyphicon glyphicon-trash"></span>
                                             </a>
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload slide-image">
                                             <img src="../../images/slides/7.jpg">
+                                            <a href="?action=delete&slide_id=1" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </a>
                                         </div>
-                                        <div class="img-upload">
+                                        <div class="img-upload slide-image">
                                             <img src="../../images/slides/8.jpg">
+                                            <a href="?action=delete&slide_id=1" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </a>
                                         </div>
                                     </div>
-                                    
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading title-bar">
+                                    <h5>News</h5>
+                                    <a href="news.php" role="button" class="btn btn-success pull-right">
+                                      <span class="glyphicon glyphicon-plus"></span> Add News
+                                    </a>
+                                </div>
+                                <div class="panel-body">
+
                                   <div class="blog-post">
                                     <p class="blog-opr">
                                       
