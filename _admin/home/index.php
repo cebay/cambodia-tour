@@ -61,6 +61,24 @@
                                     </a>
                                 </div>
                                 <div class="panel-body">
+
+                                    <div class="blog-post">
+                                        <div class="img-upload upload-img">
+                                            <a class="glyphicon glyphicon-plus" href="#">Add image slide</a>
+                                        </div>
+                                        <div class="img-upload slide-image">
+                                            <img src="../../images/slides/6.jpg">
+                                            <a href="?action=delete&slide_id=1" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </a>
+                                        </div>
+                                        <div class="img-upload">
+                                            <img src="../../images/slides/7.jpg">
+                                        </div>
+                                        <div class="img-upload">
+                                            <img src="../../images/slides/8.jpg">
+                                        </div>
+                                    </div>
                                     
                                   <div class="blog-post">
                                     <p class="blog-opr">
