@@ -60,7 +60,8 @@
 			`tou_end_date`	= '%s',
 			`tou_location`	= '%s',
 			`tou_status`		=  %u WHERE `tou_id`= %u");
-	define("TOUR_SQL_DELETE","");
+	define("TOUR_SQL_DELETE",
+			"DELETE FROM " . TBL_TOUR . " WHERE tou_id = %u");
 
 	define("ABOUTUS_SQL_INSERT",
 			"INSERT INTO " . TBL_ABOUT_US . "(

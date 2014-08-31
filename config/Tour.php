@@ -71,7 +71,7 @@
 		}
 		function delete() {
 			$tou_id = $this->tou_id;
-			$stmt = sprintf(ABOUTUS_SQL_DELETE, $tou_id);
+			$stmt = sprintf(TOUR_SQL_DELETE, $tou_id);
 			return mysql_query($stmt);
 		}
 	}

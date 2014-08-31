@@ -1,3 +1,13 @@
+<?php
+    require("../../config/class.php");
+
+    if( $_GET['action']=="delete") {
+        $opr->tour->tou_id = $_GET['tou_id'];
+        if($opr->tour->delete()) {
+
+        }
+    }
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
