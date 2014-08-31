@@ -39,75 +39,48 @@
                         <p class="about-breadscrumb">home &raquo; tour-destination</p>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-7">
-                            <img src="../images/tour-destination/tour-slide1.jpg" class="img-responsive tour-slide">
-                            
-                            <ul class='thumb'>
-                                <li>
-                                    <img src="../images/tour-destination/thumbs.jpg" class="img-thumbnail">  
-                                </li>
-                                <li>
-                                    <img src="../images/tour-destination/thumbs.jpg" class="img-thumbnail">  
-                                </li>
-                                <li>
-                                    <img src="../images/tour-destination/thumbs.jpg" class="img-thumbnail">  
-                                </li>
-                                <li>
-                                    <img src="../images/tour-destination/thumbs.jpg" class="img-thumbnail">  
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="hidden-xs col-sm-5">
-                            <h1>::Special Destination::</h1>
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
-                            <p></p>
-                        </div>
-                    </div>
-                    <h5 class='more-dest'>
-                        View more &raquo;<br>
-                        <span>destination</span>
-                    </h5>
-                    <div id="masonry-container">
-                        <div class="box col3 item">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <img class="img-responsive" src="../images/tour-destination/masonry/1.jpg">
                         </div>
-                        <div class="box col3 item">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <img class="img-responsive" src="../images/tour-destination/masonry/2.jpg">
                         </div>
-                        <div class="box col3 item">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <img class="img-responsive" src="../images/tour-destination/masonry/3.jpg">
                         </div>
-                        <div class="box col3 item">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <img class="img-responsive" src="../images/tour-destination/masonry/4.jpg">
                         </div>
-                        <div class="box col3 item">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/5.jpg">
+                    </div>
+                    <div class="row">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/1.jpg">
                         </div>
-                        <div class="box col3 item">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/6.jpg">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/2.jpg">
                         </div>
-                        <div class="box col3 item">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/7.jpg">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/3.jpg">
                         </div>
-                        <div class="box col3 item">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/8.jpg">
-                        </div>
-                        <div class="box col3 item">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/9.jpg">
-                        </div>
-                        <div class="box col3 item">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/10.jpg">
-                        </div>
-                        <div class="box col3 item">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/11.jpg">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/4.jpg">
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/1.jpg">
+                        </div>
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/2.jpg">
+                        </div>
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/3.jpg">
+                        </div>
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <img class="img-responsive" src="../images/tour-destination/masonry/4.jpg">
+                        </div>
+                    </div>
+                    
                 </div>
                 <?php include("../partials/footer.php"); ?>
             </div>
@@ -120,21 +93,7 @@
         <script type="text/javascript" src="../js/app.js"></script>
         <script src="../js/vendor/bootstrap.min.js"></script>
 
-        <script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
-        <script type="text/javascript">
-            var container = document.querySelector('#masonry-container');
-            var msnry = new Masonry( container, {
-              // options
-              columnWidth: 110,
-              itemSelector: '.item',
-              animate: true,
-              isOriginLeft: false,
-              animationOptions: {
-                duration: 700,
-                queue: true
-              }
-            });
-        </script>
+        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
