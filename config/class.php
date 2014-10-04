@@ -11,6 +11,6 @@
 	$opr->gallery 	= new Gallery;
 	$opr->about 		= new About;
 	$opr->tour 			= new Tour;
-	$opr->HomeNews	= new HomeNews;
+	$opr->homeNews	= new HomeNews;
 	$opr->homeSlide = new HomeSlide;
 ?>

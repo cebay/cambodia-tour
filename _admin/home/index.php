@@ -13,6 +13,7 @@
     }
 
     $home_slides = $opr->select_records("*",TBL_HOME_SLIDE);
+    $home_news = $opr->select_records("*",TBL_HOME_NEWS);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -73,7 +74,7 @@
                                             ?>
                                             <div class="img-upload slide-image">
                                                 <img src="../../images/slides/<?php echo $row['slide_image']; ?>">
-                                                <a href="?action=delete&slide_id=3" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                                <a href="?action=delete&slide_id=<?php echo $row['slide_id']; ?>" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
                                                     <span class="glyphicon glyphicon-trash"></span>
                                                 </a>
                                             </div>
@@ -92,44 +93,26 @@
                                     </a>
                                 </div>
                                 <div class="panel-body">
-
-                                  <div class="blog-post">
-                                    <p class="blog-opr">
-                                      
-                                      <a href="?action=delete&news_id=1" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                    </a>
-                                    <a href="news.php?action=edit&news_id=1" role="button" class="btn btn-default btn-xs btn-del">
-                                        <span class="glyphicon glyphicon-pencil"></span>
-                                    </a>
-                                    </p>
-                                    <h3>News 1</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                  </div>
-                                  <div class="blog-post">
-                                    <p class="blog-opr">
-                                      <button class="btn btn-default btn-xs">
-                                        <span class="glyphicon glyphicon-pencil"></span>
-                                      </button>
-                                      <button class="btn btn-default btn-xs">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </p>
-                                    <h3>New 2</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                  </div>
+                                    <?php 
+                                    while($row = mysql_fetch_array($home_news)) {
+                                        ?>
+                                            <div class="blog-post">
+                                              <p class="blog-opr">
+                                                
+                                                <a href="?action=delete&news_id=1" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                                  <span class="glyphicon glyphicon-trash"></span>
+                                              </a>
+                                              <a href="news.php?action=edit&news_id=1" role="button" class="btn btn-default btn-xs btn-del">
+                                                  <span class="glyphicon glyphicon-pencil"></span>
+                                              </a>
+                                              </p>
+                                              <h3><?php echo $row['news_title']; ?></h3>
+                                              <p><?php echo $row['news_desc']; ?></p>
+                                            </div>
+                                        <?php
+                                    }
+                                    ?>
+                                  
                                 </div>
                             </div>
                           </div>
