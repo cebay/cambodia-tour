@@ -11,6 +11,8 @@
             $opr->homeNews->delete();
         }
     }
+
+    $home_slides = $opr->select_records("*",TBL_HOME_SLIDE);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -34,6 +36,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/_admin.css">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
 
     </head>
     <body>
@@ -65,24 +68,18 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="blog-post">
-                                        <div class="img-upload slide-image">
-                                            <img src="../../images/slides/6.jpg">
-                                            <a href="?action=delete&slide_id=3" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                                <span class="glyphicon glyphicon-trash"></span>
-                                            </a>
-                                        </div>
-                                        <div class="img-upload slide-image">
-                                            <img src="../../images/slides/7.jpg">
-                                            <a href="?action=delete&slide_id=1" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                                <span class="glyphicon glyphicon-trash"></span>
-                                            </a>
-                                        </div>
-                                        <div class="img-upload slide-image">
-                                            <img src="../../images/slides/8.jpg">
-                                            <a href="?action=delete&slide_id=1" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                                <span class="glyphicon glyphicon-trash"></span>
-                                            </a>
-                                        </div>
+                                        <?php
+                                        while($row = mysql_fetch_array($home_slides)) {
+                                            ?>
+                                            <div class="img-upload slide-image">
+                                                <img src="../../images/slides/<?php echo $row['slide_image']; ?>">
+                                                <a href="?action=delete&slide_id=3" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </a>
+                                            </div>
+                                            <?php
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                             </div>

@@ -3,7 +3,7 @@
 
     if ($_POST['btn_save']) {
 
-            $is_uploaded = $opr->upload_file($_FILES["slide_image"], "../../images/home/");
+            $is_uploaded = $opr->upload_file($_FILES["slide_image"], "../../images/slides/");
 
             $opr->homeSlide->slide_image   = $_FILES["slide_image"]["name"];
 

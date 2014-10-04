@@ -54,6 +54,13 @@
 
 			return $record;
 		}
+
+		function select_records($field, $table) {
+			$stmt	 = sprintf(SELECT_RECORDS, $field, $table);
+			$query 	 = mysql_query($stmt);
+
+			return $query;
+		}
 	}
 
 ?>

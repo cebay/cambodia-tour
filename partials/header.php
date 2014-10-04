@@ -6,14 +6,13 @@
 <div class="col-xs-9">
     <div class="row">
         <div class="col-xs-12 hidden-xs">
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">
-                    <span class="glyphicon glyphicon-search"></span> Submit
-                </button>
-            </form>
+            <section class="login pull-right">
+                <a href="<?php echo $path.'_admin'?>" class="btn btn-success">
+                    Signup
+                </a>
+                &nbsp;or&nbsp;
+                <a href="#">Login</a>
+            </section>
         </div>
     </div>
     <nav id="nav-custom" class="navbar navbar-default navbar-wrapper" role="navigation">

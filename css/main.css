@@ -10,6 +10,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+.login {
+    margin: 5px 0 10px;
+}
+
 html,
 button,
 input,
