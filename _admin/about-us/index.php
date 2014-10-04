@@ -6,6 +6,7 @@
 
         }
     }
+    $abouts = $opr->select_records("*", TBL_ABOUT_US);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -57,84 +58,36 @@
                                     </a>
                                 </div>
                             </div>
+                            <?php
+                            while($row = mysql_fetch_array($abouts)) {
+
+                            ?>
                             <div class="panel panel-default">
                                 <div class="panel-heading title-bar">
-                                    <h4>radin</h4>
-                                    <a href="?action=delete&abo_id=2" role="button" class="btn btn-default btn-xs btn-del pull-right" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                    <h4><?php echo $row['abo_title']; ?></h4>
+                                    <a href="?action=delete&abo_id=<?php echo $row['abo_id']; ?>" role="button" class="btn btn-default btn-xs btn-del pull-right" onclick="return confirm('Are you sure? Do you want to delete this record?');">
                                         <span class="glyphicon glyphicon-trash"></span>
                                     </a>
-                                    <a href="upsert.php?action=edit&abo_id=2" role="button" class="btn btn-default btn-xs btn-del pull-right">
+                                    <a href="upsert.php?action=edit&abo_id=<?php echo $row['abo_id']; ?>" role="button" class="btn btn-default btn-xs btn-del pull-right">
                                         <span class="glyphicon glyphicon-pencil"></span>
                                     </a>
                                 </div>
                                 <div class="panel-body">
                                     <div class="row">
                                       <div class="col-xs-4">
-                                        <div class="thumb-about"></div>
+                                        <div class="thumb-about">
+                                            <img src="../../images/about-us/<?php echo $row['abo_image']; ?>" alt="<?php echo $row['abo_image']; ?>">
+                                        </div>
                                       </div>
                                       <div class="col-xs-8">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <p><?php echo $row['abo_desc']; ?></p>
                                       </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading title-bar">
-                                    <h4>radin</h4>
-                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-trash pull-right"></span>
-                                    </a>
-                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                    </a>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="row">
-                                      <div class="col-xs-4">
-                                        <div class="thumb-about"></div>
-                                      </div>
-                                      <div class="col-xs-8">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading title-bar">
-                                    <h4>radin</h4>
-                                    <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-trash pull-right"></span>
-                                    </a>
-                                    <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                      <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                    </a>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="row">
-                                      <div class="col-xs-4">
-                                        <div class="thumb-about"></div>
-                                      </div>
-                                      <div class="col-xs-8">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php
+                            }
+                            ?>
                           </div>
                         </div><!--/row-->
                     </div><!--/container-->
