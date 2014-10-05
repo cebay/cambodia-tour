@@ -2,3 +2,7 @@
 	color: #2a6496;
 	background: #eee;
 }
+.rep-image {
+	max-height: 200px;
+	overflow: hidden;
+}

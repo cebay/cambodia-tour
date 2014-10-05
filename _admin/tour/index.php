@@ -7,6 +7,7 @@
 
         }
     }
+    $tours = $opr->select_records("*", TBL_TOUR);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -58,119 +59,37 @@
                                 </div>
                             </div>
                             <div class="row">
+                                <?php
+                                while($row = mysql_fetch_array($tours)) {
+                                ?>
                               <div class="col-xs-12 col-sm-6">
                                 <div class="panel panel-default">
                                     <div class="panel-heading title-bar">
-                                        <h4>radin</h4>
+                                        <h4><?php echo $row['tou_title']; ?></h4>
                                         
-                                        <a href="?action=delete&tou_id=1" role="button" class="btn btn-default btn-xs btn-del pull-right" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                        <a href="?action=delete&tou_id=<?php echo $row['tou_id']; ?>" role="button" class="btn btn-default btn-xs btn-del pull-right" onclick="return confirm('Are you sure? Do you want to delete this record?');">
                                             <span class="glyphicon glyphicon-trash"></span>
                                         </a>
-                                        <a href="info.php?action=edit&tou_id=1" role="button" class="btn btn-default btn-xs btn-del pull-right">
+                                        <a href="info.php?action=edit&tou_id=<?php echo $row['tou_id']; ?>" role="button" class="btn btn-default btn-xs btn-del pull-right">
                                             <span class="glyphicon glyphicon-pencil"></span>
                                         </a>
                                     </div>
                                     <div class="panel-body">
                                         <div class="row">
-                                          <div class="col-xs-12">
-                                            <img src="../../images/tour-destination/tour-slide.jpg">
+                                          <div class="col-xs-12 rep-image">
+                                            <img class="img-responsive" src="../../images/tour-destination/<?php echo $row['tou_image']; ?>">
                                           </div>
                                           <div class="col-xs-12">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <p><?php echo $row['tou_desc']; ?></p>
                                           </div>
                                         </div>
                                     </div>
                                 </div>
                               </div>
-                              <div class="col-xs-12 col-sm-6">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading title-bar">
-                                        <h4>radin</h4>
-                                        <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                          <span class="glyphicon glyphicon-trash pull-right"></span>
-                                        </a>
-                                        <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                          <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                        </a>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                          <div class="col-xs-12">
-                                            <img src="../../images/tour-destination/tour-slide.jpg">
-                                          </div>
-                                          <div class="col-xs-12">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-6">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading title-bar">
-                                        <h4>radin</h4>
-                                        <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                          <span class="glyphicon glyphicon-trash pull-right"></span>
-                                        </a>
-                                        <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                          <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                        </a>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                          <div class="col-xs-12">
-                                            <img src="../../images/tour-destination/tour-slide.jpg">
-                                          </div>
-                                          <div class="col-xs-12">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-6">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading title-bar">
-                                        <h4>radin</h4>
-                                        <a href="#" class="btn btn-default btn-xs trash-ico" data-toggle="tooltip" data-original-title="Delete Item" data-no-turbolink="true">
-                                          <span class="glyphicon glyphicon-trash pull-right"></span>
-                                        </a>
-                                        <a href="#" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
-                                          <span class="glyphicon glyphicon-pencil pull-right"></span>
-                                        </a>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                          <div class="col-xs-12">
-                                            <img src="../../images/tour-destination/tour-slide.jpg">
-                                          </div>
-                                          <div class="col-xs-12">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
+                              <?php
+                                }
+                              ?>
+                              
                             </div>
                           </div>
                         </div><!--/row-->

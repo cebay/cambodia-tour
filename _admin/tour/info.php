@@ -19,6 +19,8 @@
 
             if($_POST["tou_image_hidden"] != '' && $_FILES["tou_image"]["name"] == '') {
                 $opr->tour->tou_image = $_POST["tou_image_hidden"];
+            } else {
+                $opr->upload_file($_FILES["tou_image"], "../../images/tour-destination/");
             }
 
             if (!$opr->tour->update()) {
