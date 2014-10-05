@@ -2,6 +2,47 @@
     require_once("../config/class.php");
 
     $contact = $opr->find_record("*", TBL_CONTACT_US, 1);
+
+    if($_POST) {
+
+        $to  = $contact['con_email'];
+
+        $con_name = $_POST['con_name'];
+        $con_phone = $_POST['con_phone'];
+        $con_email = $_POST['con_email'];
+        $con_message = $_POST['con_message'];
+
+        $subject = 'Sending From Contact Us Page';
+
+        $message = '
+        <html>
+        <head>
+          <title>Sending From Contact Us Page</title>
+        </head>
+        <body>
+          <p>Welcome!</p>
+          <table>
+            <tr>
+              <th>Name</th><th>Phone</th><th>Email</th><th>Message</th>
+            </tr>
+            <tr>
+              <td>'.$con_name.'</td><td>'.$con_phone.'</td><td>'.$con_email.'</td><td>'.$con_message.'</td>
+            </tr>
+          </table>
+        </body>
+        </html>
+        ';
+
+        $headers  = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        $headers .= 'To: <' . $to . '>' . "\r\n";
+        $headers .= 'From: <' . $con_email . '>' . "\r\n";
+
+        mail($to, $subject, $message, $headers);
+    }
+
+    
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -62,36 +103,37 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading"><h2>email us</h2></div>
                                 <div class="panel-body">
-                                    <form class="form-horizontal" role="form">
+                                    <form class="form-horizontal" role="form" name="frm_contact" method="post">
                                         <div class="form-group">
-                                            <label for="inputName" class="col-lg-2 control-label">Name</label>
+                                            <label for="con_name" class="col-lg-2 control-label">Name</label>
                                             <div class="col-lg-10">
-                                                <input type="name" class="form-control" id="inputName" placeholder="Name">
+                                                <input type="name" class="form-control" name="con_name" placeholder="Name">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputTelephone" class="col-lg-2 control-label">Telephone</label>
+                                            <label for="con_phone" class="col-lg-2 control-label">Telephone</label>
                                             <div class="col-lg-10">
-                                                <input type="telephone" class="form-control" id="inputTelephone" placeholder="Telephone">
+                                                <input type="telephone" class="form-control" name="con_phone" placeholder="Telephone">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputEmail1" class="col-lg-2 control-label">*Email</label>
+                                            <label for="con_email" class="col-lg-2 control-label">*Email</label>
                                             <div class="col-lg-10">
-                                                <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                                                <input type="email" class="form-control" name="con_email" placeholder="Email">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputMessage" class="col-lg-2 control-label">*Message</label>
+                                            <label for="con_message" class="col-lg-2 control-label">*Message</label>
                                             <div class="col-lg-10">
-                                                <textarea rows="5" name="message" id="message" class="form-control"></textarea>
+                                                <textarea rows="5" name="con_message" class="form-control"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-lg-offset-2 col-lg-10">
-                                               <button type="submit" class="btn btn-default">Send</button>
+                                               <input type="submit" class="btn btn-default" value="Send">
                                             </div>
                                         </div>
+
                                     </form>
                                 </div>
                             </div>
