@@ -37,6 +37,7 @@ function updateMarkerAddress(str) {
 }
 
 function initialize() {
+  console.log(MYLIBRARY);
   var latLng = new google.maps.LatLng(11.473544, 104.949163);
   var map = new google.maps.Map(document.getElementById('mapCanvas'), {
     zoom: 8,
