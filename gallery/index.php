@@ -1,3 +1,9 @@
+<?php
+    require_once("../config/class.php");
+
+    $galleries = $opr->select_records("*", TBL_GALLERY);
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -17,6 +23,7 @@
         <link rel="stylesheet" type="text/css" href="../css/sites/gallery.css">
         <link rel="stylesheet" href="../css/main.css">
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        
 
     </head>
     <body>
@@ -38,105 +45,15 @@
                         <p class="about-breadscrumb">home &raquo; galleries</p>
                     </div>
                     <div class="collage">
+                        <?php
+                        while($row=mysql_fetch_array($galleries)) {
+                        ?>
                         <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/1.jpg">
+                            <img class="img-thumbnail" height="200" src="../images/galleries/<?php echo $row['gal_image']?>">
                         </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/2.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/3.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/4.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/5.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/6.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/7.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/8.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/9.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/10.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/11.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/12.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/13.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/14.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/15.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/16.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/17.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/18.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/19.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/20.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/21.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/22.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/12.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/13.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/14.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/15.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/16.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/17.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/18.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/19.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/20.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/21.jpg">
-                        </div>
-                        <div class="c-item">
-                            <img class="img-thumbnail" src="../images/galleries/collage/22.jpg">
-                        </div>
+                        <?php 
+                        }
+                        ?>
                     </div>
                 </div>
                 <?php include("../partials/footer.php"); ?>

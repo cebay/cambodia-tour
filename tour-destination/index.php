@@ -1,3 +1,8 @@
+<?php
+    require_once("../config/class.php");
+
+    $tours = $opr->select_records("*", TBL_TOUR);
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -39,48 +44,16 @@
                         <p class="about-breadscrumb">home &raquo; tour-destination</p>
                     </div>
                     <div class="row">
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/1.jpg">
-                        </div>
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/2.jpg">
-                        </div>
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/3.jpg">
-                        </div>
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/4.jpg">
-                        </div>
+                        <?php
+                            while($row = mysql_fetch_array($tours)) {
+                                ?>
+                                    <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <img class="img-responsive" src="../images/tour-destination/<?php echo $row['tou_image']?>">
+                                    </div>
+                                <?php
+                            }
+                        ?>
                     </div>
-                    <div class="row">
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/1.jpg">
-                        </div>
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/2.jpg">
-                        </div>
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/3.jpg">
-                        </div>
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/4.jpg">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/1.jpg">
-                        </div>
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/2.jpg">
-                        </div>
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/3.jpg">
-                        </div>
-                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <img class="img-responsive" src="../images/tour-destination/masonry/4.jpg">
-                        </div>
-                    </div>
-                    
                 </div>
                 <?php include("../partials/footer.php"); ?>
             </div>
