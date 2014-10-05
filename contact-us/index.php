@@ -1,3 +1,8 @@
+<?php
+    require_once("../config/class.php");
+
+    $contact = $opr->find_record("*", TBL_CONTACT_US, 1);
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -41,17 +46,14 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading"><h2>address</h2></div>
                                 <div class="panel-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p><?php echo $contact['con_address_desc']; ?></p>
                                     <dl class="dl-horizontal">
                                         <dt>Mobile phone:</dt>
-                                            <dd>093 555 225</dd>
+                                            <dd><?php echo $contact['con_phone']; ?></dd>
                                         <dt>Email</dt>
-                                            <dd>radin.reth@gmail.com</dd>
+                                            <dd><?php echo $contact['con_email']; ?></dd>
                                         <dt>Facebook</dt>
-                                            <dd>http://www.faceboolk.com/radinreth</dd>
-                                        <dt>Twitter</dt>
-                                            <dd>@radin-reth</dd>
+                                            <dd><?php echo $contact['con_social']; ?></dd>
                                     </dl> 
                                 </div>
                             </div>
@@ -120,7 +122,7 @@
         <script type="text/javascript">
           function initialize() {
             var mapOptions = {
-              center: new google.maps.LatLng(-34.397, 150.644),
+              center: new google.maps.LatLng(<?php echo $contact['con_lat'] ?>, <?php echo $contact['con_long'] ?>),
               zoom: 8
             };
             var map = new google.maps.Map(document.getElementById("map-canvas"),
