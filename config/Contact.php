@@ -40,6 +40,11 @@
 			$stmt 	 = sprintf(CONTACT_SQL_UPDATE, $lat, $lng, $user_id);
 			return mysql_query($stmt);
 		}
+		function update_logo($logo_name) {
+			$stmt = "UPDATE tbl_contact_us set con_logo = '" . $logo_name . "'";
+			return mysql_query($stmt);
+		}
+		
 		function upsert() {
 
 		}

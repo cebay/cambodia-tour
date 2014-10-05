@@ -1,6 +1,6 @@
 <?php
+    include("../../config/class.php");
     if ($_POST) {
-        include("../../config/class.php");
         $opr->contact->lat = $_POST['lat'];
         $opr->contact->lng = $_POST['lng'];
         $opr->contact->user_id = 1;
@@ -82,7 +82,7 @@
                                         </div>
                                         <div class="panel-body logo-wrapper">
                                             <div class="img-replacement">
-                                                <img src="../../images/asian-tour-logo.jpg">
+                                                <img src="../../images/ajax/<?php echo $contact['con_logo'];?>">
                                             </div>
                                             <p>
                                                 <a href="#" id="label-upload">change logo</a>
@@ -108,13 +108,12 @@
                                             </a>
                                         </div>
                                         <div class="panel-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna...</p>
+                                            <p><?php echo $contact['con_address_desc'];?></p>
                                             <dl class="dl-horizontal">
                                               <dt>Email: </dt>
-                                                <dd>radin.reth@gmail.com</dd>
+                                                <dd><?php echo $contact['con_email'];?></dd>
                                               <dt>Tel: </dt>
-                                                <dd>093 555 225</dd>
+                                                <dd><?php echo $contact['con_phone'];?></dd>
                                             </dl>
                                         </div>
                                     </div>

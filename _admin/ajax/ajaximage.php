@@ -23,9 +23,11 @@ $path = "../../images/ajax/";
 							
 							if(move_uploaded_file($tmp, $path.$actual_image_name))
 								{
+									require_once('../../config/class.php');
+									$opr->contact->update_logo($actual_image_name);
 									
 									echo '<img src="../../images/ajax/'.$actual_image_name.'" />';
-									
+
 								}
 							else
 								echo "failed";
