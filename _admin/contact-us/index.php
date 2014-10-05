@@ -103,7 +103,7 @@
                                             <h4>
                                               basic info
                                             </h4>
-                                            <a href="upsert.php" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
+                                            <a href="upsert.php?action=edit&con_id=<?php echo $contact['con_id']; ?>" class="btn btn-default btn-xs edit-ico" data-toggle="tooltip" data-original-title="Edit" data-no-turbolink="true">
                                               <span class="glyphicon glyphicon-pencil pull-right"></span>
                                             </a>
                                         </div>

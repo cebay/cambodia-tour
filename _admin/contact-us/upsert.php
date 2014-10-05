@@ -7,12 +7,21 @@
         $opr->contact->phone = $_POST['phone'];
         $opr->contact->social = $_POST['social'];
 
-        if (!$opr->contact->save()) {
-            echo "Cannot save Basic Info!";
+        if($_POST['contact_edit']) {
+            if (!$opr->contact->update_basic_info()) {
+                echo "Cannot update Basic Info!";
+            } else {
+                header("location: index.php"); exit();
+            }
         } else {
-            header("location: index.php?flash=1"); exit();
+            if (!$opr->contact->save()) {
+                echo "Cannot save Basic Info!";
+            } else {
+                header("location: index.php?flash=1"); exit();
+            }
         }
     }
+    $contact = $opr->find_record("*", TBL_CONTACT_US, 1);
 ?>
 
 <!DOCTYPE html>
@@ -67,12 +76,13 @@
                             </div>
                             <div class="row">
                                 <form class="form-horizontal" role="form" method="post">
+                                    <input type="hidden" name="contact_edit" value="<?php echo $contact['con_id']; ?>">
                                     <div class="col-xs-12"><h2>Basic Info</h2></div>
                                     <div class="col-xs-12">
                                         <div class="form-group">
                                             <label for="inputMessage" class="col-lg-2 control-label">Description</label>
                                             <div class="col-lg-10">
-                                                <textarea rows="5" name="description" id="description" class="form-control"></textarea>
+                                                <textarea rows="5" name="description" id="description" class="form-control"><?php echo $contact['con_address_desc']; ?></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -87,7 +97,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-xs-8">
-                                                        <input type="text" placeholder="" class="form-control" name="email">
+                                                        <input type="text" placeholder="" class="form-control" name="email" value="<?php echo $contact['con_email']; ?>">
                                                     </div>
                                                 </div>
                                                 <div class="row com-dropdown">
@@ -99,7 +109,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-xs-8">
-                                                        <input type="text" placeholder="" class="form-control" name="phone">
+                                                        <input type="text" placeholder="" class="form-control" name="phone" value="<?php echo $contact['con_phone']; ?>">
                                                     </div>
                                                 </div>
                                                 <div class="row com-dropdown">
@@ -111,7 +121,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-xs-8">
-                                                        <input type="text" placeholder="" class="form-control" name="social">
+                                                        <input type="text" placeholder="" class="form-control" name="social" value="<?php echo $contact['con_social']; ?>">
                                                     </div>
                                                 </div>
                                             </div>

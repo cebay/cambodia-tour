@@ -12,11 +12,21 @@
 				`con_long`, 
 				`con_logo`, 
 				`user_id`) VALUES ('', '%s', '%s', '%s', '%s', '', '', '', '')");
+	
+
 	define("CONTACT_SQL_UPDATE",
 			"UPDATE " . TBL_CONTACT_US . " SET 
 			`con_lat`='%s',
 			`con_long`='%s'
 			WHERE user_id=%u");
+
+	define("CONTACT_SQL_UPDATE_BASIC_INFO",
+			"UPDATE " . TBL_CONTACT_US . " SET 
+			`con_address_desc`='%s',
+			`con_email`='%s',
+			`con_phone`='%s',
+			`con_social`='%s'");
+
 	define("CONTACT_SQL_DELETE","");
 
 	define("USER_SQL_INSERT","");

@@ -32,6 +32,7 @@
 			$stmt = sprintf(CONTACT_SQL_INSERT, $description, $phone, $email, $social);
 			return mysql_query($stmt);
 		}
+
 		function update() {
 			$lat 	 = $this->lat;
 			$lng 	 = $this->lng;
@@ -40,11 +41,22 @@
 			$stmt 	 = sprintf(CONTACT_SQL_UPDATE, $lat, $lng, $user_id);
 			return mysql_query($stmt);
 		}
+
+		function update_basic_info() {
+			$description 	 = $this->description;
+			$email 	 = $this->email;
+			$phone = $this->phone;
+			$social = $this->social;
+
+			$stmt 	 = sprintf(CONTACT_SQL_UPDATE_BASIC_INFO, $description, $email, $phone, $social);
+			return mysql_query($stmt);
+		}
+
 		function update_logo($logo_name) {
 			$stmt = "UPDATE tbl_contact_us set con_logo = '" . $logo_name . "'";
 			return mysql_query($stmt);
 		}
-		
+
 		function upsert() {
 
 		}
