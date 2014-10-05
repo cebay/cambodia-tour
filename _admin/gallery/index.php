@@ -1,6 +1,7 @@
 <?php
+    require("../../config/class.php");
+    
     if ($_GET['action'] == 'delete') {
-      require("../../config/class.php");
       $opr->gallery->gal_id   = $_GET['gal_id'];
 
       if (!$opr->gallery->delete()) {
@@ -10,6 +11,7 @@
         exit();
       }
     }
+    $galleries = $opr->select_records("*", TBL_GALLERY);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -63,251 +65,29 @@
                                     </a>
                                   </div>
                                 </div>
+                                <?php
+                                while($row = mysql_fetch_array($galleries)) {
+                                ?>
                                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                                   <div class="img-wrapper">
                                     <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <h3>title 1</h3>
-                                      <a href="?action=delete&gal_id=11" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                      <?php
+                                        $output = strlen($row['gal_title']) > 15 ? substr($row['gal_title'],0,15)."..." : $row['gal_title'];
+                                      ?>
+                                      <h3><?php echo $output; ?></h3>
+                                      <a href="?action=delete&gal_id=<?php echo $row['gal_id'];?>" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
                                         <span class="glyphicon glyphicon-trash"></span>
                                       </a>
-                                      <a href="upsert.php?action=edit&gal_id=11" role="button" class="btn btn-default btn-xs btn-del">
+                                      <a href="upsert.php?action=edit&gal_id=<?php echo $row['gal_id'];?>" role="button" class="btn btn-default btn-xs btn-del">
                                         <span class="glyphicon glyphicon-pencil"></span>
                                       </a>
                                     </div>
-                                    <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
+                                    <img src="../../images/galleries/<?php echo $row['gal_image'];?>" class="img-responsive">
                                   </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/1.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/1.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/1.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/1.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/2.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/3.jpg" class="img-responsive">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                  <div class="img-wrapper">
-                                    <div class="panel-delete">
-                                      <h3>title 1</h3>
-                                      <button type="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                      </button>
-                                    </div>
-                                    <img src="../../images/galleries/collage/4.jpg" class="img-responsive">
-                                  </div>
-                                </div>
+                                <?php
+                                  }
+                                ?>
                               </div>
                             </form>
                           </div>

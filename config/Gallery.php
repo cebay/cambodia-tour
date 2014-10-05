@@ -31,9 +31,9 @@
 			$gal_title	= $this->gal_title;
 			$gal_image	= $this->gal_image;
 			$gal_status = $this->gal_status;
-			$user_id 	= $this->user_id;
+			$gal_id 	= $this->gal_id;
 
-			$stmt 	 = sprintf(GALLERY_SQL_UPDATE, $gal_title, $gal_image, $gal_status, $user_id);
+			$stmt 	 = sprintf(GALLERY_SQL_UPDATE, $gal_title, $gal_image, $gal_status, $gal_id);
 			return mysql_query($stmt);
 		}
 		function upsert() {

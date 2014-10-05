@@ -36,7 +36,7 @@
 				`gal_title`  = '%s',
 				`gal_image`  = '%s',
 				`gal_status` = %u
-				 WHERE `user_id`= %u");
+				 WHERE `gal_id`= %u");
 
 	define("GALLERY_SQL_DELETE", "DELETE FROM " . TBL_GALLERY . " WHERE gal_id=%u");
 

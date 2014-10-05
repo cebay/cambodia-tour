@@ -6,13 +6,15 @@
         $opr->gallery->gal_title   = $_POST['gal_title'];
         $opr->gallery->gal_image   = $_FILES["gal_image"]["name"];
         $opr->gallery->gal_status  = (($_POST['gal_status']) == 'on' ? 1 : 0);
-        $opr->gallery->user_id     = 1;
+        $opr->gallery->gal_id     = $_POST['gal_edit'];
 
         if($_POST['gal_edit']) {
             //echo '=> ' . $_POST["gal_image_hidden"]; exit(0);
 
             if($_POST["gal_image_hidden"] != '' && $_FILES["gal_image"]["name"] == '') {
                 $opr->gallery->gal_image = $_POST["gal_image_hidden"];
+            } else {
+                $opr->upload_file($_FILES["gal_image"], "../../images/galleries/");
             }
 
             if (!$opr->gallery->update()) {
@@ -97,8 +99,8 @@
                                     <div class="col-xs-12">
                                         <h2>Gallery</h2>
                                     </div>
-                                    <input type="text" value="<?php echo $gallery['gal_id'] ?>" name="gal_edit">
-                                    <div class="col-xs-12">
+                                    <input type="hidden" value="<?php echo $gallery['gal_id'] ?>" name="gal_edit">
+                                    <div class="col-xs-7">
                                         <div class="form-group">
                                             <label for="inputMessage" class="col-lg-2 control-label">Title: </label>
                                             <div class="col-lg-10">
@@ -108,7 +110,7 @@
                                         <div class="form-group">
                                             <label for="inputMessage" class="col-lg-2 control-label">Image: </label>
                                             <div class="col-lg-10">
-                                                <input type="text" name="gal_image_hidden" value="<?php echo $gallery['gal_image'] ?>" >
+                                                <input type="hidden" name="gal_image_hidden" value="<?php echo $gallery['gal_image'] ?>" >
                                                 <input type="file" name="gal_image">
                                             </div>
                                         </div>
