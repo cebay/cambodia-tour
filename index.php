@@ -1,4 +1,12 @@
-<?php $current_page = 'root'; ?>
+<?php
+    require_once("config/class.php");
+    $current_page = 'root';
+
+    $slides = $opr->select_records("*", TBL_HOME_SLIDE);
+    $news = $opr->select_records("*", TBL_HOME_NEWS);
+    $abouts = $opr->select_records("*", TBL_ABOUT_US);
+    $tours = $opr->select_records("*", TBL_TOUR);
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -45,24 +53,19 @@
 
                               <!-- Wrapper for slides -->
                               <div class="carousel-inner">
-                                    <div class="item active">
-                                        <img src="images/slides/6.jpg" alt="6.jpg">
+                                    <?php
+                                    $i=0;
+                                    while($row=mysql_fetch_array($slides)) {
+                                    ?>
+                                    <div class="item <?php echo (++$i == 1) ? 'active' : ''; ?>">
+                                        <img src="images/slides/<?php echo $row['slide_image'];?>" alt="<?php echo $row['slide_image'];?>">
                                         <div class="carousel-caption">
-                                            image: 6.jpg
+                                            image: <?php echo $row['slide_image'];?>
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <img src="images/slides/7.jpg" alt="7.jpg">
-                                        <div class="carousel-caption">
-                                            image: 7.jpg
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <img src="images/slides/8.jpg" alt="8.jpg">
-                                        <div class="carousel-caption">
-                                            image: 8.jpg
-                                        </div>
-                                    </div>
+                                    <?php
+                                    }
+                                    ?>
                               </div>
 
                               <!-- Controls -->
@@ -109,170 +112,70 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-3">
+                            <?php
+                            while($row = mysql_fetch_array($news)) {
+                            ?>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h4>new1</h4>
+                                    <h4><?php echo $row['news_title']; ?></h4>
                                 </div>
                                 <div class="panel-body">
                                   <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                  quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                                    <?php echo $row['news_desc']; ?>
                                   </p>
                                 </div>
                             </div>
+                            <?php
+                            }
+                            ?>
                         </div>
                         <div class="col-xs-12 col-sm-9">
                             <div class="panel panel-default">
                                 <div class="panel-body">
+                                    <?php
+                                    while($row = mysql_fetch_array($abouts)) {
+                                    ?>
                                     <div class="row info">
                                         <div class="col-xs-12 col-sm-9">
                                             <h5 class="info-title">
-                                                Lorem ipsum dolor
+                                                <?php echo $row['abo_title']; ?>
                                             </h5>
-                                            <p class="info-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <p class="info-p"><?php echo $row['abo_desc']; ?></p>
                                         </div>
                                         <div class="col-xs-12 col-sm-3 info-img">
-                                            <img src="images/island.jpg" alt="island.jpg" class="thumbnail">
+                                            <img src="images/about-us/<?php echo $row['abo_image']; ?>" alt="<?php echo ($row['abo_image']=='')?'No image': ''; ?>" class="thumbnail img-responsive">
                                         </div>
                                     </div>
-                                    <div class="row info">
-                                        <div class="col-xs-12 col-sm-9">
-                                            <h5 class="info-title">
-                                                Lorem ipsum dolor
-                                            </h5>
-                                            <p class="info-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3 info-img">
-                                            <img src="images/island.jpg" alt="island.jpg" class="thumbnail">
-                                        </div>
-                                    </div>
-                                    <div class="row info">
-                                        <div class="col-xs-12 col-sm-9">
-                                            <h5 class="info-title">
-                                                Lorem ipsum dolor
-                                            </h5>
-                                            <p class="info-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3 info-img">
-                                            <img src="images/island.jpg" alt="island.jpg" class="thumbnail">
-                                        </div>
-                                    </div>
+                                    <?php
+                                    }
+                                    ?>
                                 </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="row">
+                                    <?php
+                                    while($row = mysql_fetch_array($tours)) {
+                                    ?>
                                     <div class="col-xs-12 col-sm-6 col-md-4">
                                         <div class="panel-body">
                                             <ul class="media-list">
                                                 <li class="media">
-                                                    <a class="pull-left" href="#">
-                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
+                                                    <a style="width: 60px; height: 60px; overflow: hidden;" class="pull-left" href="#">
+                                                        <img class="media-object img-responsive" src="images/tour-destination/<?php echo $row['tou_image']; ?>" alt="<?php echo $row['tou_image']; ?>">
                                                     </a>
                                                     <div class="media-body">
-                                                        <h4 class="media-heading">Media heading</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                        <h4 class="media-heading"><?php echo $row['tou_title']; ?></h4>
+                                                        <p><?php echo $row['tou_desc']; ?></p>
                                                     </div>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="panel-body">
-                                            <ul class="media-list">
-                                                <li class="media">
-                                                    <a class="pull-left" href="#">
-                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Media heading</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="panel-body">
-                                            <ul class="media-list">
-                                                <li class="media">
-                                                    <a class="pull-left" href="#">
-                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Media heading</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="panel-body">
-                                            <ul class="media-list">
-                                                <li class="media">
-                                                    <a class="pull-left" href="#">
-                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Media heading</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                     <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="panel-body">
-                                            <ul class="media-list">
-                                                <li class="media">
-                                                    <a class="pull-left" href="#">
-                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Media heading</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                     <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="panel-body">
-                                            <ul class="media-list">
-                                                <li class="media">
-                                                    <a class="pull-left" href="#">
-                                                        <img class="media-object" src="images/boat.jpg" alt="boat.jpg">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Media heading</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <?php
+                                    }
+                                    ?>
+
+
                                 </div>
                             </div>
                         </div>

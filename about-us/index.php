@@ -1,3 +1,9 @@
+<?php
+    require_once("../config/class.php");
+
+    $about_us = $opr->select_records("*", TBL_ABOUT_US);
+    $about_us1 = $opr->select_records("*", TBL_ABOUT_US);
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -40,55 +46,40 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-3">
                             <div class="list-group">
-                                <a href="#" class="list-group-item active">
-                                    ABOUT CAMBODIA
-                                </a>
-                                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                                <a href="#" class="list-group-item">Morbi leo risus</a>
-                                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                                <?php
+                                while($row=mysql_fetch_array($about_us)){
+                                ?>
+                                    <a href="#<?php echo $row['abo_id'];?>" class="list-group-item">
+                                        <?php echo $row['abo_title'];?>
+                                    </a>
+                                <?php 
+                                }
+                                ?>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-9">
+                            <?php
+
+                            while($row=mysql_fetch_array($about_us1)){
+                            ?>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-8">
-                                    <h5>Introduction</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <h5 id="<?php echo $row['abo_id']?>"><?php echo $row['abo_title']?></h5>
+                                    <p><?php echo $row['abo_desc']?></p>
                                 </div>
                                 <div class="col-xs-12 col-sm-4">
-                                    <img src="../images/about-us/intro-map.jpg" class="img-responsive thumbnail">
+                                    <?php 
+                                    if($row['abo_image']!='') {
+                                    ?>
+                                        <img src="../images/about-us/<?php echo $row['abo_image']?>" alt="<?php echo $row['abo_image']?>" class="img-responsive thumbnail">
+                                    <?php 
+                                    } 
+                                    ?>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-8">
-                                    <h5>Geography</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="col-xs-12 col-sm-4">
-                                    <img src="../images/about-us/geography.jpg" class="img-responsive thumbnail">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <h5>Population</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
+                            <?php
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
