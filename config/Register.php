@@ -19,14 +19,14 @@
 
 		function save() {
 
-			$user_id				= '';
 			$user_name			= $this->user_name;
 			$user_email			= $this->user_email;
 			$user_password	= $this->user_password;
 			$user_status 		= $this->user_status;
 			$user_photo 		= $this->user_photo;
 
-			$stmt = sprintf(REGISTER_SQL_INSERT, $user_id, $user_name, $user_email, $user_password, $user_status, $user_photo);
+			$stmt = sprintf(REGISTER_SQL_INSERT, $user_name, $user_email, $user_password, $user_status, $user_photo);
+
 			return mysql_query($stmt);
 		}
 	}

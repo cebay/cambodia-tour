@@ -6,7 +6,7 @@
         $opr->register->user_name     = $_POST['user_name'];
         $opr->register->user_email    = $_POST['user_email'];
         $opr->register->user_password = $_POST['user_password'];
-        $opr->register->user_status   = 1;
+        $opr->register->user_status   = $_POST['user_status'];
         $opr->register->user_photo    = '';
 
         if( $opr->register->save() ) {
@@ -53,8 +53,8 @@
                     <div class="row">
                         
                         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                            <h1>Registration</h1>
-                            <p>Welcome! Ready to register with IS440? <br> It’s free and simple!</p>
+                            <h1>Login</h1>
+                            <p>Welcome back!</p>
                             <form class="form-horizontal" role="form" name="frm_register" method="post">
                                 <div class="form-group">
                                     <label for="user_name" class="col-lg-2 control-label">User name: </label>
@@ -66,12 +66,6 @@
                                     <label for="user_password" class="col-lg-2 control-label">User password: </label>
                                     <div class="col-lg-10">
                                         <input type="password" class="form-control" name="user_password" placeholder="password">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="user_email" class="col-lg-2 control-label">User email: </label>
-                                    <div class="col-lg-10">
-                                        <input type="email" class="form-control" name="user_email" placeholder="email">
                                     </div>
                                 </div>
                                 

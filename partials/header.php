@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-xs-12 hidden-xs">
             <section class="login pull-right">
-                <a href="<?php echo $path.'_admin'?>" class="btn btn-success">
+                <a href="<?php echo $path.'signup'?>" class="btn btn-success">
                     Signup
                 </a>
                 &nbsp;or&nbsp;
