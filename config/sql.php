@@ -109,5 +109,14 @@
 
 	define("FIND_RECORD", "SELECT %s FROM %s WHERE %s");
 
-	define("SELECT_RECORDS", "SELECT %s FROM %s");	
+	define("SELECT_RECORDS", "SELECT %s FROM %s");
+
+	define("REGISTER_SQL_INSERT", 
+			"INSERT INTO `" . TBL_USER . "`(
+				`user_id`, 
+				`user_name`, 
+				`user_email`, 
+				`user_password`, 
+				`user_status`, 
+				`user_photo`) VALUES ('','%s','%s','%s',%u,'%s')");
 ?>

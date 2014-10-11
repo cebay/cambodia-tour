@@ -13,4 +13,5 @@
 	$opr->tour 			= new Tour;
 	$opr->homeNews	= new HomeNews;
 	$opr->homeSlide = new HomeSlide;
+	$opr->register 	= new Register;
 ?>
