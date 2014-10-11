@@ -11,7 +11,7 @@
                     Signup
                 </a>
                 &nbsp;or&nbsp;
-                <a href="#">Login</a>
+                <a href="<?php echo $path.'login'?>">Login</a>
             </section>
         </div>
     </div>

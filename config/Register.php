@@ -29,5 +29,14 @@
 
 			return mysql_query($stmt);
 		}
+
+		function login() {
+			$user_name			= $this->user_name;
+			$user_password	= $this->user_password;
+
+			$stmt = sprintf(LOGIN_SQL, $user_name, $user_password);
+			return mysql_query($stmt);
+		}
+
 	}
 ?>

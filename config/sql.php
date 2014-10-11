@@ -119,4 +119,6 @@
 				`user_password`, 
 				`user_status`, 
 				`user_photo`) VALUES ('','%s','%s','%s',%u,'%s')");
+	define("LOGIN_SQL", 
+			"SELECT * FROM `tbl_user` WHERE user_name='%s' and user_password='%s' and user_status=1");
 ?>

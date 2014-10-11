@@ -4,15 +4,12 @@
 
     if($_POST) {
         $opr->register->user_name     = $_POST['user_name'];
-        $opr->register->user_email    = $_POST['user_email'];
         $opr->register->user_password = $_POST['user_password'];
-        $opr->register->user_status   = $_POST['user_status'];
-        $opr->register->user_photo    = '';
 
-        if( $opr->register->save() ) {
+        if( mysql_num_rows($opr->register->login()) > 0 ) {
             header("location: ../_admin");
         } else {
-            echo '<p style="color: red;">Register Fail!</p>';
+            $login_false = true;
         }
     }
 
@@ -55,6 +52,14 @@
                         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                             <h1>Login</h1>
                             <p>Welcome back!</p>
+                            <?php
+                            if($login_false)
+                            {
+                            ?>
+                            <p style="color: red">Login false!</p>
+                            <?php
+                            }
+                            ?>
                             <form class="form-horizontal" role="form" name="frm_register" method="post">
                                 <div class="form-group">
                                     <label for="user_name" class="col-lg-2 control-label">User name: </label>
@@ -71,7 +76,7 @@
                                 
                                 <div class="form-group">
                                     <div class="col-lg-offset-2 col-lg-10">
-                                       <input type="submit" class="btn btn-default" value="Register now!">
+                                       <input type="submit" class="btn btn-default" value="Login now!">
                                     </div>
                                 </div>
 
