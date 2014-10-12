@@ -1,4 +1,5 @@
 <?php
+    $active_page = 'backend';
     require("../../config/class.php");
 
     if( $_GET['action']=="delete") {

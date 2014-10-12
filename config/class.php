@@ -5,6 +5,11 @@
 
 	// echo $current_page; exit(0);
 	$redirect_uri = ($current_page == 'root') ? 'login/' : '../login';
+	
+	if( $active_page != 'frontend' ) {
+		$redirect_uri = '../' . $redirect_uri;
+	}
+
 	if($active_page != 'frontend') {
 		if($_SESSION['user_id'] == '') {
 			header('location: ' . $redirect_uri);

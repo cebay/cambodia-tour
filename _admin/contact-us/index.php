@@ -1,4 +1,5 @@
 <?php
+    $active_page = 'backend';
     include("../../config/class.php");
     if ($_POST) {
         $opr->contact->lat = $_POST['lat'];

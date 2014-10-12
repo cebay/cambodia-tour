@@ -1,4 +1,5 @@
 <?php
+    $active_page = 'backend';
     require("../../config/class.php");
     if( $_GET['action']=="delete") {
         $opr->about->abo_id = $_GET['abo_id'];

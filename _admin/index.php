@@ -1,6 +1,7 @@
 <?php
+    $active_page = 'backend';
+    $current_page = 'root';
     require("../config/class.php");
-    $current_page = 'root'; 
 ?>
 
 <!DOCTYPE html>
