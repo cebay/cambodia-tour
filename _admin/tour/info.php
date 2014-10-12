@@ -106,7 +106,7 @@
                                 </div>
                                 <form class="form-horizontal" role="form" enctype="multipart/form-data" method="post">
                                     <div class="col-xs-12 col-sm-7">
-                                        <input type="text" value="<?php echo $tour['tou_id'] ?>" name="tou_edit">
+                                        <input type="hidden" value="<?php echo $tour['tou_id'] ?>" name="tou_edit">
                                         <div class="form-group">
                                             <label for="tou_title" class="col-lg-2 control-label">Title</label>
                                             <div class="col-lg-10">
@@ -146,12 +146,12 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-5">
                                         <input type="file" name="tou_image">
-                                        <input type="text" name="tou_image_hidden" value="<?php echo $tour['tou_image'] ?>" >
+                                        <input type="hidden" name="tou_image_hidden" value="<?php echo $tour['tou_image'] ?>" >
                                     </div>
                                     <hr>
                                     <div class="col-xs-12">
                                         <input type="submit" class="btn btn-success" value="Save">
-                                        <button type="submit" class="btn btn-default">Cancel</button>
+                                        <a href="index" class="btn btn-default">Cancel</a>
                                     </div>
                                 </form>
                             </div>

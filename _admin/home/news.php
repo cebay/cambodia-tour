@@ -93,7 +93,7 @@
                                 </div>
                                 <form class="form-horizontal" role="form" method="post">
                                     <div class="col-xs-12 col-sm-7">
-                                        <input type="text" value="<?php echo $homeNews['news_id'] ?>" name="news_edit">
+                                        <input type="hidden" value="<?php echo $homeNews['news_id'] ?>" name="news_edit">
                                         <div class="form-group">
                                             <label for="news_title" class="col-lg-2 control-label">Title</label>
                                             <div class="col-lg-10">
@@ -111,7 +111,7 @@
                                     <hr>
                                     <div class="col-xs-12">
                                         <input type="submit" class="btn btn-success" value="Save">
-                                        <button type="submit" class="btn btn-default">Cancel</button>
+                                        <a href="index.php" class="btn btn-default">Cancel</a>
                                     </div>
                                 </form>
                             </div>

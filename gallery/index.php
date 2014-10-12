@@ -51,6 +51,7 @@
                         ?>
                         <div class="c-item">
                             <img class="img-thumbnail" height="200" src="../images/galleries/<?php echo $row['gal_image']?>">
+                            <p class="gal_title"><?php echo $row['gal_title']?></p>
                         </div>
                         <?php 
                         }

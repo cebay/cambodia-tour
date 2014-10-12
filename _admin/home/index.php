@@ -100,10 +100,10 @@
                                             <div class="blog-post">
                                               <p class="blog-opr">
                                                 
-                                                <a href="?action=delete&news_id=1" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
+                                                <a href="?action=delete&news_id=<?php echo $row['news_id']?>" role="button" class="btn btn-default btn-xs btn-del" onclick="return confirm('Are you sure? Do you want to delete this record?');">
                                                   <span class="glyphicon glyphicon-trash"></span>
                                               </a>
-                                              <a href="news.php?action=edit&news_id=1" role="button" class="btn btn-default btn-xs btn-del">
+                                              <a href="news.php?action=edit&news_id=<?php echo $row['news_id']?>" role="button" class="btn btn-default btn-xs btn-del">
                                                   <span class="glyphicon glyphicon-pencil"></span>
                                               </a>
                                               </p>

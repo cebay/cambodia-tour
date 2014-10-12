@@ -91,7 +91,7 @@
                                             <div class="col-lg-10">
                                                 <div class="row com-dropdown">
                                                     <div class="col-xs-4">
-                                                        <select class="form-control">
+                                                        <select class="form-control" disabled>
                                                             <option value="email" selected>Email</option>
                                                             <option value="phone">Phone</option>
                                                             <option value="facebook">Facebook</option>
@@ -103,7 +103,7 @@
                                                 </div>
                                                 <div class="row com-dropdown">
                                                     <div class="col-xs-4">
-                                                        <select class="form-control">
+                                                        <select class="form-control" disabled>
                                                             <option value="email">Email</option>
                                                             <option value="phone" selected>Phone</option>
                                                             <option value="facebook">Facebook</option>
@@ -115,7 +115,7 @@
                                                 </div>
                                                 <div class="row com-dropdown">
                                                     <div class="col-xs-4">
-                                                        <select class="form-control">
+                                                        <select class="form-control" disabled>
                                                             <option value="email">Email</option>
                                                             <option value="phone">Phone</option>
                                                             <option value="facebook" selected>Facebook</option>

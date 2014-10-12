@@ -12,6 +12,13 @@
 .c-item {
   margin-bottom: 15px; 
   display: inline-block;
+  position: relative;
+}
+.gal_title {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  background-color: white;
 }
 .c-item img {
 /*  max-width: 100%;
