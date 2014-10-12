@@ -48,8 +48,14 @@
                         <?php
                             while($row = mysql_fetch_array($tours)) {
                                 ?>
-                                    <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 tour-item" title="<?php echo $row['tou_desc']?>">
                                         <img class="img-responsive" src="../images/tour-destination/<?php echo $row['tou_image']?>">
+                                        <div class="span-text">
+                                            <h3>Title: <?php echo $row['tou_title']?></h3>
+                                            <p>Start: <?php echo $row['tou_start_date']?></p>
+                                            <p>End: <?php echo $row['tou_end_date']?></p>
+                                            <p>Where: <?php echo $row['tou_location']?></p>
+                                        </div>
                                     </div>
                                 <?php
                             }

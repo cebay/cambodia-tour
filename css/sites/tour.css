@@ -27,5 +27,26 @@
     text-align: center;
     margin-bottom: 15px;
 }
+.item img {
+    max-height: 100%;
+    max-width: none !important;
+}
 
-
+.tour-item {
+    position: relative;
+}
+.tour-item:hover .span-text {
+    height: 200px;
+}
+.span-text {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    height: 0;
+    background-color: white;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 100%;
+    -webkit-transition: height 0.5s; /* For Safari 3.1 to 6.0 */
+        transition: height 0.5s;
+}
