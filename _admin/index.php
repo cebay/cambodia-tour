@@ -48,21 +48,16 @@
                           <div class="col-md-9">
                             
                             <h1>Welcome to Radin's Tour Company</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>We run small, personal tours to show you interesting sites around Phnom Penh. We limit the size of our groups, so we can give you a more personal experience. The area around Phnom Penh is varied and offers many different sights besides temples and Khmer Rouge history that most people associate with Cambodia. </p>
 
-                            <hr>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <img src="../images/home/lucky.jpg" alt='phnom tamao' class="img-responsive img-thumbnail">
+                                </div>
+                                <div class="col-xs-6">
+                                    <img src="../images/home/kirirom.jpg" alt="kompong speu" class="img-responsive img-thumbnail">
+                                </div>
+                            </div>
                           </div><!--/right-->
                         </div><!--/row-->
                     </div><!--/container-->
