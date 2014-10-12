@@ -9,11 +9,21 @@
     <div class="row">
         <div class="col-xs-12 hidden-xs">
             <section class="login pull-right">
-                <a href="<?php echo $path.'signup'?>" class="btn btn-success">
-                    Signup
-                </a>
-                &nbsp;or&nbsp;
-                <a href="<?php echo $path.'login'?>">Login</a>
+                <?php
+                if(!isset($_SESSION['user_id'])) {
+                ?>
+                    <a href="<?php echo $path.'signup'?>" class="btn btn-success">
+                        Signup
+                    </a>
+                    &nbsp;or&nbsp;
+                    <a href="<?php echo $path.'login'?>">Login</a>
+                <?php
+                } else {
+                    ?>
+                    <a href="<?php echo $path.'_admin'?>">My Admin</a>
+                    <?php
+                }
+                ?>
             </section>
         </div>
     </div>
