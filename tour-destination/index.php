@@ -1,4 +1,5 @@
 <?php
+    $active_page = 'frontend';
     require_once("../config/class.php");
 
     $tours = $opr->select_records("*", TBL_TOUR);

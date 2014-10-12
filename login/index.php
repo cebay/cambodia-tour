@@ -1,12 +1,17 @@
 <?php
+    $active_page = 'frontend';
     require_once("../config/class.php");
 
 
     if($_POST) {
         $opr->register->user_name     = $_POST['user_name'];
         $opr->register->user_password = $_POST['user_password'];
+        $resource_login = $opr->register->login();
 
-        if( mysql_num_rows($opr->register->login()) > 0 ) {
+        if( mysql_num_rows($resource_login) > 0 ) {
+            $row = mysql_fetch_assoc($resource_login);
+
+            $_SESSION['user_id'] == $row['user_id'];
             header("location: ../_admin");
         } else {
             $login_false = true;

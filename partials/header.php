@@ -1,7 +1,9 @@
 <?php $path = (($current_page != "root") ? "../" : ""); ?>
 
 <div class="col-xs-3">
-    <img src="<?php echo $path; ?>images/logo_mot.png">
+    <a href="<?php echo $path; ?>">
+        <img src="<?php echo $path; ?>images/logo_mot.png">
+    </a>
 </div>
 <div class="col-xs-9">
     <div class="row">

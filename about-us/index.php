@@ -1,4 +1,5 @@
 <?php
+    $active_page = 'frontend';
     require_once("../config/class.php");
 
     $about_us = $opr->select_records("*", TBL_ABOUT_US);

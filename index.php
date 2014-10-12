@@ -1,6 +1,8 @@
 <?php
-    require_once("config/class.php");
     $current_page = 'root';
+    $active_page = 'frontend';
+    
+    require_once("config/class.php");
 
     $slides = $opr->select_records("*", TBL_HOME_SLIDE);
     $news = $opr->select_records("*", TBL_HOME_NEWS);

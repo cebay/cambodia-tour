@@ -1,4 +1,5 @@
 <?php
+    $active_page = 'frontend';
     require_once("../config/class.php");
 
     $contact = $opr->find_record("*", TBL_CONTACT_US, 1);
